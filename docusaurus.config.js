@@ -9,6 +9,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'sulkar', // Usually your GitHub org/user name.
   projectName: 'SQLverine-website', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'de',
+    locales: ['de', 'en'],
+  },
   themeConfig: {
     navbar: {
       title: 'SQLverine',
@@ -17,12 +21,16 @@ module.exports = {
         src: 'img/SQLverine.svg',
       },
       items: [
-		{to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left'},
-        {to: '/docs/sqlverine/hello', label: 'SQLverine Docs', position: 'left'},
-        
+        { to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left' },
+        { to: '/docs/sqlverine/hello', label: 'SQLverine Docs', position: 'left' },
+
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -41,7 +49,7 @@ module.exports = {
         },
         {
           title: 'Community',
-          items: [            
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
@@ -55,7 +63,7 @@ module.exports = {
               label: 'Blog',
               to: '/blog',
             },
-            
+
           ],
         },
       ],
