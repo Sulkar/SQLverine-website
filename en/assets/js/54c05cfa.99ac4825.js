@@ -1,0 +1,1 @@
+(self.webpackChunksq_lverine_website=self.webpackChunksq_lverine_website||[]).push([[4777],{7237:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/SQLverine-website/en/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/SQLverine-website/en/blog/tags/facebook"}')}}]);
