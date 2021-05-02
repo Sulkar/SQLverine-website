@@ -2,8 +2,8 @@
 module.exports = {
   title: 'SQLverine',
   tagline: 'Datenbanken ganz einfach!',
-  url: 'https://tools.unsere-schule.org/',
-  baseUrl: '/docusaurus/',
+  url: 'https://sulkar.github.io/',
+  baseUrl: '/SQLverine-website/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
