@@ -25,7 +25,7 @@ module.exports = {
         { to: '/docs/sqlverine/hello', label: 'SQLverine Docs', position: 'left' },
 
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Sulkar/SQLverine-website',
           label: 'GitHub',
           position: 'right',
         },
