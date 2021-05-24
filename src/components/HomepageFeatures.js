@@ -22,7 +22,7 @@ const FeatureList = [{
     },
     {
         title: 'Dokumentation',
-        Svg: require('../../static/img/SQLverine-fgoldenrod.svg').default,
+        Svg: require('../../static/img/SQLverine-goldenrod.svg').default,
         description: ( <
             >
             Schüler * innen gerechte Dokumentation für SQL Befehle, den Editor und das Autorentool. <

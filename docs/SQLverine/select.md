@@ -8,6 +8,7 @@ sidebar_position: 2
   style={{width:200}}
 />
 
+
 ## Einzelne Spalte ausgeben
 
 ```sql
