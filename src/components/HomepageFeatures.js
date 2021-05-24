@@ -7,7 +7,7 @@ const FeatureList = [{
         Svg: require('../../static/img/SQLverine-slategrey.svg').default,
         description: ( <
             >
-            Den Umgang mit Datenbanken lernen ohne viel Text zu schreiben.Rätsel lösen.SQL lernen.Einfach im Webbrowser. <
+            Den Umgang mit Datenbanken lernen ohne viel Text zu schreiben. Rätsel lösen. SQL lernen. Einfach im Webbrowser. <
             />
         ),
     },
@@ -16,7 +16,7 @@ const FeatureList = [{
         Svg: require('../../static/img/SQLverine-forestgreen.svg').default,
         description: ( <
             >
-            Aufgaben für den Editor einfach erstellen.Datenbanken erzeugen und aufbauen. <
+            Aufgaben für den Editor einfach erstellen. Datenbanken erzeugen und aufbauen. <
             />
         ),
     },

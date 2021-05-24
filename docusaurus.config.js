@@ -14,6 +14,12 @@ module.exports = {
     locales: ['de', 'en'],
   },
   themeConfig: {
+
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+    },
+
     navbar: {
       title: 'SQLverine',
       logo: {
