@@ -10,7 +10,7 @@ const FeatureList = [{
             Den Umgang mit Datenbanken lernen ohne viel Text zu schreiben. Rätsel lösen. SQL lernen. Einfach im Webbrowser. 
           </>
         ),
-        link: "https://edit.sqlverine.org",
+        link: "https://editor.sqlverine.org",
     },
     {
         title: 'Autorentool',
@@ -20,7 +20,7 @@ const FeatureList = [{
             Aufgaben für den Editor einfach erstellen. Datenbanken erzeugen und aufbauen. 
         </>
         ),
-        link: "https://autor.sqlverine.org",
+        link: "https://author.sqlverine.org",
     },
     {
         title: 'Dokumentation',
@@ -30,7 +30,7 @@ const FeatureList = [{
             Schüler * innen gerechte Dokumentation für SQL Befehle, den Editor und das Autorentool. 
         </>
         ),
-        link: "https://doku.sqlverine.org",
+        link: "https://docs.sqlverine.org",
     },
 ];
 

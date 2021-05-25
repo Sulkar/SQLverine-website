@@ -43,7 +43,7 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            links: [{
+            /*links: [{
                 title: 'Docs',
                 items: [{
                     label: 'Tutorial',
@@ -66,8 +66,8 @@ module.exports = {
 
                 ],
             },
-            ],
-            copyright: `Copyright © ${new Date().getFullYear()} SQLverine - built with Docusaurus.`,
+            ],*/
+            copyright: `Copyright © ${new Date().getFullYear()} SQLverine`,
         },
     },
     presets: [
