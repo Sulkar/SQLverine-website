@@ -2,11 +2,11 @@
 module.exports = {
   title: 'SQLverine',
   tagline: 'Datenbanken ganz einfach!',
-  url: 'https://sulkar.github.io/',
-  baseUrl: '/SQLverine-website/',
+  url: 'https://sqlverine.org/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-32x32.png',
   organizationName: 'sulkar', // Usually your GitHub org/user name.
   projectName: 'SQLverine-website', // Usually your repo name.
   i18n: {
@@ -28,7 +28,7 @@ module.exports = {
       },
       items: [
         { to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left' },
-        { to: '/docs/sqlverine/hello', label: 'SQLverine Docs', position: 'left' },
+        { to: '/docs/sqlverine/select', label: 'SQLverine Docs', position: 'left' },
 
         {
           href: 'https://github.com/Sulkar/SQLverine-website',
