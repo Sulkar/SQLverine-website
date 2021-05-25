@@ -10,6 +10,7 @@ const FeatureList = [{
             Den Umgang mit Datenbanken lernen ohne viel Text zu schreiben. Rätsel lösen. SQL lernen. Einfach im Webbrowser. 
           </>
         ),
+        link: "https://edit.sqlverine.org",
     },
     {
         title: 'Autorentool',
@@ -19,6 +20,7 @@ const FeatureList = [{
             Aufgaben für den Editor einfach erstellen. Datenbanken erzeugen und aufbauen. 
         </>
         ),
+        link: "https://autor.sqlverine.org",
     },
     {
         title: 'Dokumentation',
@@ -28,21 +30,26 @@ const FeatureList = [{
             Schüler * innen gerechte Dokumentation für SQL Befehle, den Editor und das Autorentool. 
         </>
         ),
+        link: "https://doku.sqlverine.org",
     },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, link }) {
     return ( 
-      <div className = { clsx('col col--4') } >
-        <div className = "text--center" >
-          <Svg className = { styles.featureSvg }
-          alt = { title }/> 
-        </div > 
-        <div className = "text--center padding-horiz--md" >
-          <h3> { title } </h3> 
-          <p> { description } </p> 
-        </div> 
-      </div>
+      
+        <div className = { clsx('col col--4') } >
+          <a href= { link }> 
+          <div className = "text--center" >
+            <Svg className = { styles.featureSvg }
+            alt = { title }/> 
+          </div > 
+          <div className = "text--center padding-horiz--md" >
+            <h3> { title } </h3> 
+            <p> { description } </p> 
+          </div> 
+          </a>
+        </div>
+      
     ); 
 }
 

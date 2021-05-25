@@ -11,7 +11,7 @@
 /* You can override the default Infima variables here. */
 
 :root {
-    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary: cadetblue;
     --ifm-color-primary-dark: rgb(33, 175, 144);
     --ifm-color-primary-darker: rgb(31, 165, 136);
     --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -30,4 +30,13 @@
 
 .hero--primary {
     background-color: cadetblue;
+}
+
+.features_src-components- a {
+    color: rgb(28, 30, 33)
+}
+
+.features_src-components- a:hover {
+    color: cadetblue;
+    text-decoration: none;
 }
