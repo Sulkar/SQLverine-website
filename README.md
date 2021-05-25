@@ -1,6 +1,12 @@
 # Website
 
-[SQLverine Webseite](https://sulkar.github.io/SQLverine-website/)
+- [SQLverine Webseite](https://sulkar.github.io/SQLverine-website/)
+- [SQLverine.org](https://sqlverine.org)
+
+
+## SQLverine familiy
+- :mag_right: [SQLverine editor](https://github.com/Sulkar/SQLverine)
+- :pencil2: [SQLverine authoring tool](https://github.com/Sulkar/SQLverine-authoring-tool)
 
 ## Installation
 - benötigt Node.js
@@ -33,3 +39,11 @@ Zum Beispiel: GIT_USER=Sulkar yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Deploy to SQLverine.org via FTP
+In docusaurus.config.js you must change the baseUrl:
+```js
+baseUrl: '/SQLverine-website/',
+//change to:
+baseUrl: '/',
+```
