@@ -1,44 +1,23 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'SQLverine',
-  tagline: 'Datenbanken ganz einfach!',
-  url: 'https://sqlverine.org/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon-32x32.png',
-  organizationName: 'sulkar', // Usually your GitHub org/user name.
-  projectName: 'SQLverine-website', // Usually your repo name.
-  i18n: {
-    defaultLocale: 'de',
-    locales: ['de', 'en'],
-  },
-  themeConfig: {
-
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
+    title: 'SQLverine',
+    tagline: 'Datenbanken ganz einfach!',
+    url: 'https://sqlverine.org/',
+    baseUrl: '/',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    favicon: 'img/favicon-32x32.png',
+    organizationName: 'sulkar', // Usually your GitHub org/user name.
+    projectName: 'SQLverine-website', // Usually your repo name.
+    i18n: {
+        defaultLocale: 'de',
+        locales: ['de', 'en'],
     },
     themeConfig: {
 
-    navbar: {
-      title: 'SQLverine',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/SQLverine.svg',
-      },
-      items: [
-        { to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left' },
-        { to: '/docs/sqlverine/select', label: 'SQLverine Docs', position: 'left' },
-
-        {
-          href: 'https://github.com/Sulkar/SQLverine-website',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
+        colorMode: {
+            defaultMode: 'light',
+            disableSwitch: true,
         },
 
         navbar: {
@@ -49,7 +28,7 @@ module.exports = {
             },
             items: [
                 { to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left' },
-                { to: '/docs/sqlverine/hello', label: 'SQLverine Docs', position: 'left' },
+                { to: '/docs/sqlverine/select', label: 'SQLverine Docs', position: 'left' },
 
                 {
                     href: 'https://github.com/Sulkar/SQLverine-website',
@@ -65,28 +44,28 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Docs',
-                    items: [{
-                        label: 'Tutorial',
-                        to: '/docs/intro',
-                    }, ],
+                title: 'Docs',
+                items: [{
+                    label: 'Tutorial',
+                    to: '/docs/intro',
+                },],
+            },
+            {
+                title: 'Community',
+                items: [{
+                    label: 'Twitter',
+                    href: 'https://twitter.com/docusaurus',
+                },],
+            },
+            {
+                title: 'More',
+                items: [{
+                    label: 'Blog',
+                    to: '/blog',
                 },
-                {
-                    title: 'Community',
-                    items: [{
-                        label: 'Twitter',
-                        href: 'https://twitter.com/docusaurus',
-                    }, ],
-                },
-                {
-                    title: 'More',
-                    items: [{
-                            label: 'Blog',
-                            to: '/blog',
-                        },
 
-                    ],
-                },
+                ],
+            },
             ],
             copyright: `Copyright © ${new Date().getFullYear()} SQLverine - built with Docusaurus.`,
         },
