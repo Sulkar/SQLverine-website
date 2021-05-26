@@ -27,7 +27,7 @@ module.exports = {
                 src: 'img/SQLverine.svg',
             },
             items: [
-                { to: 'https://sulkar.github.io/SQLverine/', label: 'Editor', position: 'left' },
+                { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
                 { to: '/docs/sqlverine/select', label: 'SQLverine Docs', position: 'left' },
 
                 {

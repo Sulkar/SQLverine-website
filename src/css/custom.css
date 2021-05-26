@@ -19,6 +19,8 @@
     --ifm-color-primary-lighter: rgb(102, 212, 189);
     --ifm-color-primary-lightest: rgb(146, 224, 208);
     --ifm-code-font-size: 95%;
+    --ifm-footer-background-color: slategrey;
+    --ifm-footer-background-color-dark: slategrey;
 }
 
 .docusaurus-highlight-code-line {
@@ -30,6 +32,10 @@
 
 .hero--primary {
     background-color: cadetblue;
+}
+
+.footer--dark {
+    background-color: slategrey;
 }
 
 
