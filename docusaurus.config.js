@@ -28,13 +28,9 @@ module.exports = {
             },
             items: [
                 { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
-                { to: '/docs/sqlverine/select', label: 'SQLverine Docs', position: 'left' },
+                { to: '/docs/sqllite/select', label: 'SQLverine Docs', position: 'left' },
 
-                {
-                    href: 'https://github.com/Sulkar/SQLverine-website',
-                    label: 'GitHub',
-                    position: 'right',
-                },
+
                 {
                     type: 'localeDropdown',
                     position: 'right',
@@ -46,8 +42,14 @@ module.exports = {
             links: [{
                     title: 'Dokumentation',
                     items: [{
-                        label: 'Tutorial',
-                        to: '/docs/intro',
+                        label: 'SQLverine',
+                        to: '/docs/SQLVerine/intro',
+                    }, {
+                        label: 'SQLite für Schüler*innen',
+                        to: '/docs/SQLite/intro',
+                    }, {
+                        label: 'SQLverine Autorenwerkezeug',
+                        to: '/docs/SQLVerineAuthor/intro',
                     }, ],
                 },
                 {
