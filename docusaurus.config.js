@@ -43,30 +43,42 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            /*links: [{
-                title: 'Docs',
-                items: [{
-                    label: 'Tutorial',
-                    to: '/docs/intro',
-                },],
-            },
-            {
-                title: 'Community',
-                items: [{
-                    label: 'Twitter',
-                    href: 'https://twitter.com/docusaurus',
-                },],
-            },
-            {
-                title: 'More',
-                items: [{
-                    label: 'Blog',
-                    to: '/blog',
+            links: [{
+                    title: 'Dokumentation',
+                    items: [{
+                        label: 'Tutorial',
+                        to: '/docs/intro',
+                    }, ],
                 },
-
-                ],
-            },
-            ],*/
+                {
+                    title: 'Weiteres',
+                    items: [{
+                            label: 'Twitter',
+                            href: 'https://twitter.com/sqlverine',
+                        },
+                        {
+                            label: 'Blog',
+                            to: '/blog',
+                        },
+                        {
+                            label: 'Github',
+                            to: 'https://github.com/Sulkar/SQLverine',
+                        },
+                    ],
+                },
+                {
+                    title: 'Rechtliches',
+                    items: [{
+                            label: 'Impressum',
+                            to: '/impressum',
+                        },
+                        {
+                            label: 'Datenschutz',
+                            to: '/datenschutz',
+                        },
+                    ],
+                },
+            ],
             copyright: `Copyright © ${new Date().getFullYear()} SQLverine`,
         },
     },
