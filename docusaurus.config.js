@@ -28,7 +28,7 @@ module.exports = {
             },
             items: [
                 { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
-                { to: '/docs/sqllite/select', label: 'SQLverine Docs', position: 'left' },
+                { to: '/docs/sqlite/select', label: 'SQLverine Docs', position: 'left' },
 
 
                 {
