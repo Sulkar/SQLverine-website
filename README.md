@@ -1,6 +1,5 @@
 # Website
 
-- [SQLverine Webseite](https://sulkar.github.io/SQLverine-website/)
 - [SQLverine.org](https://sqlverine.org)
 
 
