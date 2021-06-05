@@ -4,8 +4,8 @@ sidebar_position: 3
 # WHERE
 
 <img
-  src={require('./assets/Vergleichsoperatoren.png').default}  
-  style={{width:200}}
+  src={require('./assets/where_code.png').default}  
+  style={{height:50}}
 />
 
 ## Vergleichsoperatoren

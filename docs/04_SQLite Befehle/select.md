@@ -4,8 +4,8 @@ sidebar_position: 2
 # SELECT
 
 <img
-  src={require('./assets/Select.png').default}  
-  style={{width:200}}
+  src={require('./assets/select_code.png').default}  
+  style={{height:50}}
 />
 
 

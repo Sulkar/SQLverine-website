@@ -4,8 +4,8 @@ sidebar_position: 4
 # ORDER
 
 <img
-  src={require('./assets/Sortieren.png').default}  
-  style={{width:200}}
+  src={require('./assets/order_code.png').default}  
+  style={{height:50}}
 />
 
 ## Ausgabe sortieren
