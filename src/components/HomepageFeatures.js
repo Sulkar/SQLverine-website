@@ -30,7 +30,7 @@ const FeatureList = [{
             Schüler * innen gerechte Dokumentation für SQL Befehle, den Editor und das Autorentool. 
         </>
         ),
-        link: "https://docs.sqlverine.org",
+        link: "/docs/intro",
     },
 ];
 

@@ -28,13 +28,17 @@ module.exports = {
             },
             items: [
                 { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
-                { to: '/docs/sqlite/select', label: 'SQLverine Docs', position: 'left' },
+                { to: 'https://author.sqlverine.org/', label: 'Autorenwerkzeug', position: 'left' },
+                { to: '/docs/intro', label: 'Dokumentation', position: 'left' },
+                { to: '/idee', label: 'Idee', position: 'right' },
+                { to: '/ueberuns', label: 'Über uns', position: 'right' },
+                { to: '/blog', label: 'Blog', position: 'right' },
 
 
-                {
+                /*{
                     type: 'localeDropdown',
                     position: 'right',
-                },
+                },*/
             ],
         },
         footer: {
@@ -42,14 +46,14 @@ module.exports = {
             links: [{
                     title: 'Dokumentation',
                     items: [{
-                        label: 'SQLverine',
-                        to: '/docs/SQLVerine/intro',
+                        label: 'SQLverine Editor',
+                        to: '/docs/Editor/intro',
                     }, {
-                        label: 'SQLite für Schüler*innen',
-                        to: '/docs/SQLite/intro',
+                        label: 'SQLite Dokumentation',
+                        to: '/docs/SQLite Befehle/intro',
                     }, {
                         label: 'SQLverine Autorenwerkezeug',
-                        to: '/docs/SQLVerineAuthor/intro',
+                        to: '/docs/Autorenwerkzeug/intro',
                     }, ],
                 },
                 {

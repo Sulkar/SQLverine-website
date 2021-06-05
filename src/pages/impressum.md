@@ -28,6 +28,6 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
 ## Informationen für Rechteinhaber
 Der Website-Anbieter weist darauf hin, kein Material zu verwenden, das Urheberrechten Dritter unterliegt. Es kann aber nicht ausgeschlossen werden, dass von Autoren dennoch Material eingebracht wird, das bestehende Schutzrechte verletzt, und das nicht sofort als solches erkannt wird.Wenn dem Anbieter eine entsprechende Urheberrechtsverletzung angezeigt wird, wird das betreffende Material umgehend entfernt. OffiziellerAnsprechpartner für solche Fälle ist Richard Scheglmann. Gerne können Sie Ihre Beschwerde an folgende Adresse richten: info@sqlverine.org
 
-## Urheberrech
+## Urheberrecht
 
 Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
