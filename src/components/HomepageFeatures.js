@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [{
-        title: 'SQL Editor',
+        title: 'Editor',
         Svg: require('../../static/img/SQLverine-slategrey.svg').default,
         description: ( 
           <>
@@ -13,7 +13,7 @@ const FeatureList = [{
         link: "https://editor.sqlverine.org",
     },
     {
-        title: 'Autorentool',
+        title: 'Autorenwerkzeug',
         Svg: require('../../static/img/SQLverine-forestgreen.svg').default,
         description: ( 
         <>

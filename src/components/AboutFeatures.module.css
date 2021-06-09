@@ -1,0 +1,22 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.features {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+img.portrait {
+    border-radius: 50%;
+    height: 160px;
+}
+
+.featureLink {
+    color: rgb(28, 30, 33)
+}
+
+.featureLink:hover {
+    color: cadetblue;
+    text-decoration: none;
+}
