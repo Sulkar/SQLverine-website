@@ -6,16 +6,60 @@ sidebar_position: 1
 
 Ein kleiner Überblick über SQLverine in weniger als 5 Minuten.
 
+
+Die Welt ist voller Daten. Manchmal spricht man auch von Big Data, Unternehmen sammeln Daten von Nutzern, auch Apps müssen Daten speichern. Wir wollen zum Beispiel in YouTube eine Playlist anlegen, die gespeichert wird und beim nächsten Besuch uns wieder zur Verfügung steht. All diese Daten werden meistens in **Datenbanken** gespeichert.
+
+Eine Datenbank kann man sich als Sammlung von verschiedenen Tabellen mit Einträgen vorstellen.
+
+<img
+  src={require('./assets/db_intro.png').default}  
+  style={{width:400}}
+/>
+
+Warum man für die Speicherung der Daten eine **Datenbank** nutzt und nicht zum Beispiel ein Tabellenkalkulationsprogramm, hängt von der Geschwindigkeit und dem Speichervermögen von Datenbank ab.
+
+Eine Datenbank kann 
+- sehr viele Daten speichern
+- schnell auf einzelne Einträge zugreifen
+- Einträge verändern
+
+Um mit einer Datenbank zu arbeiten und dieser Befehle zu geben, nutzt man eine eigene Programmiersprache SQL.
+
+SQL bedeutet "Structured Query Language", also eine "strukturierte Abfrage Sprache", die wie jede andere Programmiersprache verschiedene Befehle hat.
+
+Zum Beispiel listet folgende Abfrage alle Vornamen der Schüler in einer Tabelle Schüler auf:
+
+```
+SELECT vorname FROM schueler
+```
+Aber keine Angst, mit Hilfe von **SQLverine** musst du die Befehle nicht auswendig lernen und richtig schreiben, sondern kannst unseren Editor nutzen der dir die Befehle schön übersichtlich anzeigt:
+
+<img
+  src={require('./assets/sqlverine.png').default}  
+/>
+
 ## Die Idee
 
-Get started by **creating a new site**.
+Aus diesem Grund haben wir beschlossen, einen SQL Editor zu entwickeln, der folgende Funktionen mitbringen soll:
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+- Browserbasiert -> keine Installation notwendig, läuft auch auf mobilen Endgeräten
+- Benötigt kein kompliziertes Datenbanksystem im Hintergrund
+- Einfaches austauschen von Datenbanken (SQLite) möglich
+- Einfach zu bedienende Oberfläche, welche ohne viel Texteingabe auskommt
+- Integrierte Lernumgebumg, um Lernenden Aufgabenstellungen, Rätsel oder Breakouts zur Verfügung zu stellen
+- Schüler*innen gerechte Dokumentation
+- Autorenwerkzeug zum Erstellen von Aufgaben, Rätseln oder Breakouts
+
+
+
 
 ## Die Bestandteile
 
 ### SQLverine Editor
+Der SQLverine Editor ist am wichtigsten. Damit kannst du verschiedene Datenbanken mit Hilfe von SQL-Codeblöcken abfragen und interaktive Aufgaben lösen.
 
 ### SQLverine Autorentool
+Mit Hilfe des Autorentools kannst du einfach online Datenbanken erstellen, Daten importieren und sogar interaktive Aufgaben zusammenstellen. Die erstellten Datenbanken können dann wiederum in den SQLverine Editor eingelesen und geteilt werden.
 
 ### Dokumentation
+Die Dokumentation hilft dir beim Lernen von SQL (Structured Query Language). Hier findest du einen Überblick der wichtigsten Befehle und kannst beim Lernen direkt den Editor mit den aufgeführten Beispielen aufrufen.
