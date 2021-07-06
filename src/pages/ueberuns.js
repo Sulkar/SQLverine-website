@@ -14,7 +14,7 @@ function About() {
         description="Description will go into a meta tag in <head />">
         
         <main>
-          <div class="container">
+          <div className="container">
           
           </div>
           <AboutFeatures />
@@ -30,8 +30,7 @@ function About() {
           style={{
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center',
-            height: '50vh',
+            alignItems: 'center',            
             fontSize: '20px',
           }}>
 
