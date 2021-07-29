@@ -7,7 +7,7 @@ const FeatureList = [{
         img: require('../../static/img/scheglmann.jpg').default,
         description: ( 
           <>
-            Lehrer an einer bayrischen Mittelschule
+            Lehrer an einer bayerischen Mittelschule
           </>
         ),
     },
@@ -16,7 +16,7 @@ const FeatureList = [{
         img: require('../../static/img/voetterle.jpg').default,
         description: ( 
         <>
-           Konrektor an einer anderen bayrischen Mittelschule
+           Konrektor an einer anderen bayerischen Mittelschule
         </>
         ),
     },
