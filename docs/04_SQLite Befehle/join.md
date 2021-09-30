@@ -50,7 +50,7 @@ Mit diesem Befehl werden Informationen aus mehreren Tabellen gleichzeitig abgefr
 
 ```
 SELECT schueler.vorname, schueler.nachname, klassen.name FROM schueler
-JOIN klassen ON klasse.id = schueler.klassen_id
+JOIN klassen ON klasse.id = schueler.klasse_id
 ```
 Mit diesem Befehl wird abgefragt, welche Schüler*innen in welcher Klasse ist.
 

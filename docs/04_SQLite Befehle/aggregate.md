@@ -17,7 +17,7 @@ sidebar_position: 7
 | AVG(spaltenname)     | Berechnet den Durchschnitt aller gefundenen Werte.     | Text     |
 | SUM(spaltenname)     | Summiert alle gefundenen Werte.     | 
 | MAX(spaltenname)     | Liefert den größten gefundenen Wert zurück.   
-| MIN(spaltenname)     | Liefer den kleinsten gefundenen Wert zurück.    
+| MIN(spaltenname)     | Liefert den kleinsten gefundenen Wert zurück.    
 
 
 Aggregatsfunktionen berechnen ein Ergebnis aus einer Vielzahl von Werten. Aggregatsfunktionen werden häufig mit dem Gruppierungsbefehl GROUP BY im SELECT Befehl aufgerufen.
@@ -26,8 +26,6 @@ Aggregatsfunktionen berechnen ein Ergebnis aus einer Vielzahl von Werten. Aggreg
 SELECT Aggregatsfunktion(spaltenname) FROM tabellenname
 GROUP BY spaltenname
 ```
-
-Mit diesem Befehl werden Informationen aus mehreren Tabellen gleichzeitig abgefragt. Das Ergebnis wird über die jeweiligen IDs verknüpft.
 
 ### Beispiele:
 

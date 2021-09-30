@@ -79,7 +79,7 @@ CREATE TABLE "klassen" (
     "name" TEXT, 
     "jahrgangsstufe" INTEGER, 
     "lehrer_id" INTEGER,
-    FOREIGN KEY "lehrer_id" REFERENCES "lehrer"("id")
+    FOREIGN KEY (lehrer_id) REFERENCES lehrer(id)
 )
 ```
 Mit diesem Befehl wird eine Tabelle mit dem Namen klassen angelegt, die mehrere Spalten als TEXT und als INTEGER hat sowie eine Spalte id, mit der Einschränkung PRIMARY KEY. Am Ende des Befehls wird eine Referenz auf eine zweite Tabelle klassen, auf die Spalte id gesetzt.
