@@ -108,4 +108,7 @@ module.exports = {
             },
         ],
     ],
+    plugins: [
+        'plugin-image-zoom'
+      ],
 };
