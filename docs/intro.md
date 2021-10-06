@@ -58,8 +58,8 @@ Aus diesem Grund haben wir beschlossen, einen SQL Editor zu entwickeln, der folg
 ### SQLverine Editor
 Der SQLverine Editor ist am wichtigsten. Damit kannst du verschiedene Datenbanken mit Hilfe von SQL-Codeblöcken abfragen und interaktive Aufgaben lösen.
 
-### SQLverine Autorentool
-Mit Hilfe des Autorentools kannst du einfach online Datenbanken erstellen, Daten importieren und sogar interaktive Aufgaben zusammenstellen. Die erstellten Datenbanken können dann wiederum in den SQLverine Editor eingelesen und geteilt werden.
+### SQLverine Autorenwerkzeug
+Mit Hilfe des Autorenwerkzeugs kannst du einfach online Datenbanken erstellen, Daten importieren und sogar interaktive Aufgaben zusammenstellen. Die erstellten Datenbanken können dann wiederum in den SQLverine Editor eingelesen und geteilt werden.
 
 ### Dokumentation
 Die Dokumentation hilft dir beim Lernen von SQL (Structured Query Language). Hier findest du einen Überblick der wichtigsten Befehle und kannst beim Lernen direkt den Editor mit den aufgeführten Beispielen aufrufen.
