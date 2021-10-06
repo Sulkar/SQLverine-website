@@ -1,0 +1,38 @@
+---
+title: Formulareditor
+author: Richard Scheglmann
+author_title: SQLverine Core
+author_image_url: /img/scheglmann.jpg
+tags: [online, formulareditor]
+---
+### Der Formulareditor ist online!
+
+Nach einer Woche Arbeit haben wir die Formularfunktion im SQLverine Editor fertigstellen können.
+
+Formulare werden in einer eigenen Tabelle in der Datenbank gespeichert und können über den Tab: **Formulare** erstellt und ausgewählt werden:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/blog2.png').default} 
+  style={{width:400}}
+/>
+</center>
+
+<!--truncate-->
+
+In diesem Beispiel habe ich ein Formular erstellt, in dem der Nutzer in das Eingabefeld einen Namen eintragen kann. Daraufhin wird die Datenbank nach der Eingabe durchsucht und die Ergebnisse werden unterhalb aufgelistet.
+
+Wie das funktioniert kann man hier sehen:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/blog1.png').default} 
+  style={{width:400}}
+/>
+</center>
+
+Das ist der Bearbeitungsmodus des Formulareditors. Hier erstellt man zuerst eine Überschrift und eine kurze Beschreibung. Dann wird es interessant. Wir definieren einen Parameter = **param01** und geben diesem einen Namen (Schülername). 
+
+Jetzt erstellen wir für das Formular eine passende SQL Abfrage und nutzen den Parameter **param01** als Platzhalter. Im Hintergrund wird diese SQL Abfrage nach param01 durchsucht und durch die Eingabe des Nutzers ersetzt.
+
+Das war ein kurzer Überblick über den Formulareditor. Bald werden wir auch dazu eine ausführliche Dokumentation erstellen. Bis dahin viel Spaß beim Ausprobieren :-)

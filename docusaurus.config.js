@@ -11,7 +11,7 @@ module.exports = {
     projectName: 'SQLverine-website', // Usually your repo name.
     i18n: {
         defaultLocale: 'de',
-        locales: ['de', 'en'],
+        locales: ['de'],
     },
     themeConfig: {
 

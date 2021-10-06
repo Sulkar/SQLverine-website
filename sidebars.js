@@ -17,11 +17,11 @@ module.exports = {
       id: 'intro', 
       label: 'Überblick', 
     },
-    {
+    /*{
       type: 'doc',
       id: 'Einführung Datenbanken', 
       label: 'Einführung Datenbanken', 
-    },
+    },*/
     {
       type: 'category',
       label: 'Editor',
