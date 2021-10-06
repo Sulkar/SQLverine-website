@@ -38,7 +38,10 @@
     background-color: slategrey;
 }
 
-
+.customImageBorder {
+    border: 1px solid #dadde1;/*#5f9ea0;*/
+    border-radius: 2px;
+}
 /*
 .features_src-components- a {
     color: rgb(28, 30, 33)

@@ -1,0 +1,58 @@
+---
+sidebar_position: 5
+---
+
+# Aufgaben erstellen
+Aufgaben können über den Tab **Aufgabe** erstellt und verändert werden. Auf der linken Seite sind alle in der Datenbank enthaltenen Aufgaben sichtbar.
+
+<img className='customImageBorder'
+  src={require('../assets/author16.png').default} 
+/>
+
+Nach dem Bearbeiten der Aufgabe kann man diese im Tab **Vorschau** anzeigen, so wie die Aufgabe im SQLverine für die Nutzer sichtbar sein wird.
+
+<img className='customImageBorder'
+  src={require('../assets/author17.png').default} 
+/>
+
+## Aufgaben interaktiv gestalten
+Aufgaben können mit Hilfe der eingebauten Aufgaben-Engine interaktiv gestaltet werden, damit zum Beispiel automatisch das Ergebnis der SQL Abfrage geprüft wird. Folgeden Optionen kann man im Eingabefeld **Antwort(en)** nutzen:
+
+### $next  
+Bei dieser Option wird dem Nutzer nur eine **Weiter**-Schaltfläche angezeigt, mit der er zur nächsten Aufgabe kommt.
+
+<img className='customImageBorder'
+  src={require('../assets/aufgaben3.png').default} 
+/>
+
+### Wert&input
+Bei dieser Option wird dem Nutzer ein Eingabefeld angezeigt. Wird der angegebene **Wert** eingetragen, gilt die Aufgabe als gelöst und man kann zur nächsten Aufgabe gehen.
+
+<img className='customImageBorder'
+  src={require('../assets/aufgaben2.png').default} 
+/>
+
+Hier erscheint ein Eingabefeld. Gibt der Nutzer **München** ein, ist die Aufgabe gelöst und man kommt zur nächsten Aufgabe.
+
+### Wert(tabelle.spalte)&rows=Anzahl
+Bei dieser Option wird automatisch das Abfrageergebnis abgeglichen, wobei der angegebene **Wert** in der angegebenen **tabelle** und **spalte** vorkommen muss. Des Weiteren muss die Abfrage genau die **Anzahl** von Zeilen haben, wie bei **rows** angegeben wurden.
+
+<img className='customImageBorder'
+  src={require('../assets/aufgaben1.png').default} 
+/>
+
+Hier wird die Aufgabe automatisch als gelöst markiert, wenn genau **1 Zeile** ausgegeben wurden und der Name **Toni** in der Tabelle **schueler** in der Spalte **vorname** als Ergebnis der SQL Abfrage herauskommt. 
+
+Will man mehrere Werte abgleichen, kann man diese mittels **senkrechtem Strich |** trennen. Zum Beispiel:
+
+<img className='customImageBorder'
+  src={require('../assets/aufgaben5.png').default} 
+/>
+
+Hier wird die Aufgabe automatisch als gelöst markiert, wenn genau **2 Zeilen** ausgegeben wurden und der Name **Toni** und der Name **Anton** in der Tabelle **schueler** in der Spalte **vorname** als Ergebnis der SQL Abfrage herauskommt. 
+
+So sieht die richtige Ausgabe in SQLverine aus:
+
+<img className='customImageBorder'
+  src={require('../assets/aufgaben4.png').default} 
+/>

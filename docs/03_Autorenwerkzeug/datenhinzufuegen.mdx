@@ -5,7 +5,7 @@ sidebar_position: 4
 # Daten hinzufügen
 
 Im Tab **Daten bearbeiten** können Einträge der Datenbank bearbeitet und neu hinzugefügt werden.
-<img
+<img className='customImageBorder'
   src={require('../assets/author11.png').default} 
 />
 
@@ -13,20 +13,36 @@ Mit Hilfe des DropDown Menüs kann zwischen den verschiedenen vorhandenen Tabell
 
 ## Daten verändern
 Daten können nach Auswahl der Tabelle verändert werden, indem man einfach in die gewünschte Zelle der Tabelle klickt. Nach der Änderung von Daten muss nur noch gespeichert werden.
-<img
+<img className='customImageBorder'
   src={require('../assets/author13.png').default} 
 />
 
 ## neue Daten hinzufügen
+<center>
+<video width="100%" className='customImageBorder' controls="controls">
+  <source src={require('../assets/Daten_veraendern.mp4').default} type="video/mp4" />    
+</video> 
+</center>
+
 Neue Daten können einfach über die Schaltfläche **neue Zeile** hinzugefügt werden. Hat eine Spalte das Attribut **PRIMARY KEY**, wird diese Spalte sofort mit **auto** befüllt. Das heißt, dass nach dem Speichern eine automatische Nummerierung vorgenommen wird.
-<img
+<img className='customImageBorder'
   src={require('../assets/author14.png').default} 
 />
 
-## Daten importieren
+## Daten importieren und exportieren
+<center>
+<video width="100%" className='customImageBorder' controls="controls">
+  <source src={require('../assets/Daten_exportieren_und_importieren.mp4').default} type="video/mp4" />    
+</video> 
+</center>
+
 Daten können sehr einfach im CSV Format importiert werden. Dazu klickt man auf die Schaltfläche **CSV Daten importieren** und fügt die rohen Daten dort ein.
-<img
+
+<center>
+<img className='customImageBorder'
   src={require('../assets/author15.png').default} 
+  style={{width:400}}
 />
+</center>
 
 Gibt es in der Tabelle eine Spalte mit dem Namen **id** und hat diese Spalte das Attribut **PRIMARY KEY** kann diese Spalte ignoriert werden, damit die eingefügten Daten automatisch eine fortlaufenden **id** bekommen. Will man das nicht, muss man rechts oben die Checkbox **Spalte id ignorieren** abwählen.
