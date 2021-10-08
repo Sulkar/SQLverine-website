@@ -29,6 +29,7 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
 **Videos werden im Ordner videos ausgegeben und sind statisch verlinkt. Dieser Ordner muss nicht jedes Mal beim Veröffentlichen der Webseite auf den Webspace hochgeladen werden.**
 
 ## Deployment
