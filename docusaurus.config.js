@@ -48,13 +48,14 @@ module.exports = {
                     items: [{
                         label: 'SQLverine Editor',
                         to: '/docs/Editor/intro',
+                    },  {
+                        label: 'SQLverine Autorenwerkezeug',
+                        to: '/docs/Autorenwerkzeug/intro',
                     }, {
                         label: 'SQLite Dokumentation',
                         to: '/docs/SQLite Befehle/intro',
-                    }, {
-                        label: 'SQLverine Autorenwerkezeug',
-                        to: '/docs/Autorenwerkzeug/intro',
-                    }, ],
+                    },
+                    ],
                 },
                 {
                     title: 'Weiteres',
