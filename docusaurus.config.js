@@ -81,6 +81,10 @@ module.exports = {
                         {
                             label: 'Datenschutz',
                             to: '/datenschutz',
+                        },                        
+                        {
+                            label: 'Kontakt',
+                            to: '/ueberuns',
                         },
                     ],
                 },

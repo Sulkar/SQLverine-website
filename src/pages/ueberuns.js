@@ -15,7 +15,16 @@ import AboutFeatures from '../components/AboutFeatures';
           }}>
 
           <AboutFeatures />
-                  
+         
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',            
+            fontSize: '20px',
+          }}>
+        <p>&#9993; Kontakt: <a href="mailto:info@sqlverine.org">info@sqlverine.org</a></p> 
         </div>
       </Layout>
     );
