@@ -1,29 +1,9 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
 import AboutFeatures from '../components/AboutFeatures';
 
-function About() {
-    const {siteConfig} = useDocusaurusContext();
-    return (
-      <Layout
-        title={`Hello from ${siteConfig.title}`}
-        description="Description will go into a meta tag in <head />">
-        
-        <main>
-          <div className="container">
-          
-          </div>
-          <AboutFeatures />
-        </main>
-      </Layout>
-    );
-  }
   
-  function Hello() {
+  function ueberuns() {
     return (
       <Layout title="Über uns">
         <div
@@ -35,10 +15,10 @@ function About() {
           }}>
 
           <AboutFeatures />
+                  
         </div>
       </Layout>
     );
   }
   
-  export default Hello;
-  //export default About;
+  export default ueberuns;
