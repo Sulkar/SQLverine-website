@@ -91,3 +91,17 @@ So sieht die richtige Ausgabe in SQLverine aus:
   src={require('../assets/aufgaben4.png').default} 
 />
 </center>
+
+Die Tabelle und die Spalte können auch weggelassen werden, wenn man nur Werte im Ergebnis ablgeichen will, unabhängig von der Tabelle bzw. Spalte:
+
+|Befehl|Beispiel|
+|--|--|
+|Wert1\|Wert2\|Wert3\|...&rows=Anzahl|1 A\|2 B\|3 B\|4 A GT\|16\|17\|18\|19&rows=4|
+
+Hier wird nur geprüft, ob alle eingegebenen Werte "1 A|2 B|3 B|4 A GT|16|17|18|19" im Ergebnis der Abfrage vorhanden sind.
+
+<center>
+<img className='customImageBorder'
+  src={require('../assets/aufgaben6.png').default} 
+/>
+</center>
