@@ -6,8 +6,8 @@ title: 'TABLE: ALTER'
 import EditorLink from "@site/src/components/EditorLink"
 
 <img
-  src={require('./assets/neueSpalte.png').default}  
-  style={{width:200}}
+  src={require('./assets/alter_add2.png').default}  
+  style={{maxHeight:50}}
 />
 
 ## Spalte einer Tabelle hinzufügen
@@ -41,14 +41,14 @@ ALTER TABLE schueler ADD geburtsort TEXT
 ---
 
 <img
-  src={require('./assets/Delete.png').default}  
-  style={{width:200}}
+  src={require('./assets/alter_drop2.png').default}  
+  style={{maxHeight:50}}
 />
 
 ## Spalte einer Tabelle löschen
 
 ```
-ALTER TABLE tabellenname DROP COLUMN spaltenname <DATENTYP>
+ALTER TABLE tabellenname DROP COLUMN spaltenname
 ```
 Dieser Befehl löscht eine Spalte einer Tabelle.
 
@@ -71,6 +71,13 @@ ALTER TABLE schueler DROP COLUMN geburtsort
 
 |id| vorname   | nachname | geburtsdatum | klasse_id | fehltage |
 |--|--------   | -------- | ------------ | :-------: |:-:|
+
+---
+
+<img
+  src={require('./assets/alter_rename2.png').default}  
+  style={{maxHeight:50}}
+/>
 
 ## Spalte/Tabelle umbennen
 

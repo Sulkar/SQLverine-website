@@ -23,7 +23,7 @@ Nach dem Bearbeiten der Aufgabe kann man diese im Tab **Vorschau** anzeigen, so 
 ## Aufgaben interaktiv gestalten
 Aufgaben können mit Hilfe der eingebauten Aufgaben-Engine interaktiv gestaltet werden, damit zum Beispiel automatisch das Ergebnis der SQL Abfrage geprüft wird. Folgeden Optionen kann man im Eingabefeld **Antwort(en)** nutzen:
 
-### Schaltfläche 'nächste Aufgabe' anzeigen
+### Schaltfläche 'Weiter' anzeigen
 
 |Befehl|Beispiel|
 |--|--|
@@ -39,16 +39,20 @@ Bei dieser Option wird dem Nutzer nur eine **Weiter**-Schaltfläche angezeigt, m
   src={require('../assets/aufgaben3.png').default} 
 />
 
+<img className='customImageBorder'
+  src={require('../assets/author18.png').default} 
+/>
+
 ### Eingabefeld mit definiertem Wert
 
 |Befehl|Beispiel|
 |--|--|
 |Wert&input|München&input|
-
+|Wert1\|Wert2&input|München\|münchen&input|
 
 :::info
 
-Bei dieser Option wird dem Nutzer ein Eingabefeld angezeigt. Wird der angegebene **Wert** eingetragen, gilt die Aufgabe als gelöst und man kann zur nächsten Aufgabe gehen.
+Bei dieser Option wird dem Nutzer ein Eingabefeld angezeigt. Wird der angegebene **Wert** eingetragen, gilt die Aufgabe als gelöst und man kann zur nächsten Aufgabe gehen. Es können auch mehrere Werte als richtig markiet werden, wenn diese mit einem Pipe-Symbol "|" getrennt werden. 
 
 :::
 
@@ -58,7 +62,22 @@ Bei dieser Option wird dem Nutzer ein Eingabefeld angezeigt. Wird der angegebene
 
 Hier erscheint ein Eingabefeld. Gibt der Nutzer **München** ein, ist die Aufgabe gelöst und man kommt zur nächsten Aufgabe.
 
+<img className='customImageBorder'
+  src={require('../assets/author19.png').default} 
+/>
+
 ### Automatische Prüfung der Abfrage
+
+|Befehl|Beispiel|
+|--|--|
+|Wert&rows=Anzahl|Toni&rows=1|
+|Wert1\|Wert2&rows=Anzahl|Toni\|Fritz&rows=2|
+
+:::info
+
+Bei dieser Option wird automatisch das Abfrageergebnis abgeglichen, wobei der angegebene **Wert** im Ergebnis vorkommen muss. Die Spalte oder Tabelle ist hierbei egal, die Abfrage muss nur den Wert und  die **Anzahl** von Zeilen haben, wie bei **rows** angegeben wurden. Sollen mehr Werte abgeglichen werden, müssen diese mit einem Pipe-Symbol "|" getrennt werden.
+
+:::
 
 |Befehl|Beispiel|
 |--|--|
@@ -92,7 +111,7 @@ So sieht die richtige Ausgabe in SQLverine aus:
 />
 </center>
 
-Die Tabelle und die Spalte können auch weggelassen werden, wenn man nur Werte im Ergebnis ablgeichen will, unabhängig von der Tabelle bzw. Spalte:
+Wie gesagt, können die Tabelle und die Spalte auch weggelassen werden, wenn man nur Werte im Ergebnis ablgeichen will, unabhängig von der Tabelle bzw. Spalte:
 
 |Befehl|Beispiel|
 |--|--|
