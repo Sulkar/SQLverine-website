@@ -1,0 +1,81 @@
+---
+title: Neue Funktionen
+author: Richard Scheglmann
+author_title: SQLverine Core
+author_image_url: /img/scheglmann.jpg
+tags: [neue Funktionen]
+custom_edit_url: null
+---
+## Neuer Befehl: AS ___
+
+Der SQLverine entwickelt ich immer weiter und bekommt stetig weitere Funktionen. Neu hinzugekommen ist der SQL Befehl **AS ___**, mit dem in der Ausgabe die Spaltenüberschriften verändert werden können. 
+
+Will man zum Beispiel aus der Tabelle "schueler" den vornamen und nachnamen ausgeben und will, dass im Ergebnis statt **vorname -> Rufname** und statt **nachname -> Familienname** steht, kann man den Befehl **AS ___** nutzen und einen neuen Namen eingeben:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as1.png').default} 
+  
+/>
+</center>
+
+Das Ergebnis sieht dann so aus:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as2.png').default} 
+  
+/>
+</center>
+
+## Möglichkeit mehrere JOINS auf eine Tabelle auszuführen
+
+Nun ist es möglich mehrere JOINS auf eine Tabelle auszuführen. Dies kann zum Beispiel bei einer Fußball Datenbank notwendig sein. Angenommen es gibt eine Tabelle die alle Spiele der Bundesliga auflistet mit folgenden Spalten:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as3.png').default} 
+  
+/>
+</center>
+
+Nun will man das Datum, den Heimverein und den Gastverein ausgeben. Anstatt der IDs der Vereine, sollen natürlich die Namen der Vereine angezeigt werden. Dazu muss man zweimal die Tabelle **verein** mit der Tabelle **spiel** verbinden:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as4.png').default} 
+  
+/>
+</center>
+
+Und hier das Ergebnis:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as5.png').default} 
+  
+/>
+</center>
+
+Wie man sieht, wird immer der Spaltenname angezeigt und der Nutzer kann nicht erkennen, welcher Verein nun der Heimverein und welcher der Gastverein ist.
+Hier kann der neue Befehl **AS ___** genutzt werden, um die Spalten in der Ausgabe umzubenennen:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as6.png').default} 
+  
+/>
+</center>
+
+Jetzt kann man sofort erkennen, welcher Verein der Heim- und welcher der Gastverein ist:
+
+<center>
+  <img className='customImageBorder'
+  src={require('./assets/as7.png').default} 
+  
+/>
+</center>
+
+Das wars. Viel Spaß beim Testen der neuen Funktionen. 
+
+<p>&#9993; Kontakt: <a href="mailto:info@sqlverine.org">info@sqlverine.org</a></p>
