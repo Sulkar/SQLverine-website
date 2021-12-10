@@ -66,7 +66,7 @@ Hier erscheint ein Eingabefeld. Gibt der Nutzer **München** ein, ist die Aufgab
   src={require('../assets/author19.png').default} 
 />
 
-### Automatische Prüfung der Abfrage
+### Automatische Prüfung der Abfrage (&rows, &cols)
 
 |Befehl|Beispiel|
 |--|--|
@@ -76,6 +76,16 @@ Hier erscheint ein Eingabefeld. Gibt der Nutzer **München** ein, ist die Aufgab
 :::info
 
 Bei dieser Option wird automatisch das Abfrageergebnis abgeglichen, wobei der angegebene **Wert** im Ergebnis vorkommen muss. Die Spalte oder Tabelle ist hierbei egal, die Abfrage muss nur den Wert und  die **Anzahl** von Zeilen haben, wie bei **rows** angegeben wurden. Sollen mehr Werte abgeglichen werden, müssen diese mit einem Pipe-Symbol "|" getrennt werden.
+
+:::
+
+:::tip
+
+Hier kann anstatt **&rows=Anzahl** auch **&cols=Anzahl** genutzt werden, um die Anzahl der im Ergebnis aufgeführten Spalten zu bestimmen. Auch eine Kombination aus beiden ist möglich:
+
+**Toni\|Fritz&rows=2&cols=1**
+
+Hier wäre die Aufgabe nur richtig, wenn genau eine Spalte und zwei Zeilen ausgegeben werden und die Namen "Toni" und "Fritz" vorkommen würden.
 
 :::
 
