@@ -7,7 +7,7 @@
 - :mag_right: [SQLverine](https://github.com/Sulkar/SQLverine)
 
 ## Infos
-- Navbar swizzled `npm run swizzle @docusaurus/theme-classic Navbar -- --danger` for Login/Profil navbar item see commit: 894e2d93dd47631dae3defae483cc7bb7f62520c
+- Navbar swizzled `npm run swizzle @docusaurus/theme-classic Navbar -- --danger` for Login/Profil navbar item see [commit](https://github.com/Sulkar/SQLverine-website/commit/894e2d93dd47631dae3defae483cc7bb7f62520c).
 
 ## Installation
 - benötigt Node.js
