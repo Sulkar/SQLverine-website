@@ -1,3 +1,6 @@
+
+const path = require('path');
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: 'SQLverine',
@@ -34,12 +37,13 @@ module.exports = {
                 { to: '/ueberuns', label: 'Über uns', position: 'right' },
                 { to: '/blog', label: 'Blog', position: 'right' },
 
-
                 /*{
                     type: 'localeDropdown',
                     position: 'right',
                 },*/
             ],
+           
+
         },
         footer: {
             style: 'dark',
@@ -114,6 +118,7 @@ module.exports = {
         ],
     ],
     plugins: [
-        'plugin-image-zoom'
+        'plugin-image-zoom',
+        path.resolve(__dirname, 'plugins', 'AddHeader'),
       ],
 };
