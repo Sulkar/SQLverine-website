@@ -42,7 +42,7 @@ export default function Login() {
   return (
     <div>
       <div className="row">
-        <div className="col text-center">
+        <div className="col text--center">
          <h2>Anmelden</h2>
         </div>
       </div>
@@ -72,8 +72,8 @@ export default function Login() {
       </div>
       <div>{alert}</div>
       <div className="row">
-        <div className="col text-center">
-          <button className="button button--success mt-3 mb-1" onClick={handleLogin}>
+        <div className="col text--center">
+          <button className="button button--outline button--success" onClick={handleLogin}>
             Login
           </button>
         </div>

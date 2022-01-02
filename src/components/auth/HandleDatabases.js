@@ -42,7 +42,7 @@ export default function HandleDatabases() {
           <div className="mt-3">
             <h3>Datenbanken</h3>
             {myValues.loader ? <Loader /> : <></>}
-            <ul className="list-group">
+            <ul className="verineList">
               {databases.map((database) => (
                 <DatabaseItem
                   name={database}

@@ -119,6 +119,5 @@ module.exports = {
     ],
     plugins: [
         'plugin-image-zoom',
-        path.resolve(__dirname, 'plugins', 'AddHeader'),
       ],
 };

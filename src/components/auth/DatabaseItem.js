@@ -1,7 +1,5 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
-import { Button } from "react-bootstrap";
-import { Modal } from "react-bootstrap";
 import { MyContext } from "../MyContext";
 
 export default function DatabaseItem(props) {
@@ -11,7 +9,7 @@ export default function DatabaseItem(props) {
 
   async function handleRemove(name) {
     setMyValues((oldValues) => ({ ...oldValues, loader: true }));
-    setShow(false);
+    setShowModal(false);
     axios
       .post(urlFileDelete, {
         db_name: name,
@@ -42,20 +40,21 @@ export default function DatabaseItem(props) {
   }
 
   //Modal
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showModal, setShowModal] = useState(false);
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
 
   return (
     <>
       <li
-        className="list-group-item d-flex justify-content-between align-items-center"
+        className="verineListItem"
         key={props.name}
       >
         {props.name}
         <span>
+          
           <select
-            class="form-select"
+            className="verineSelect"
             aria-label="Code select"
             onChange={handleChangeCode}
           >
@@ -90,22 +89,33 @@ export default function DatabaseItem(props) {
         </span>
       </li>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Datenbank löschen</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Wollen Sie wirklich die Datenbank: {props.name} löschen?
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            abbrechen
-          </Button>
-          <Button variant="danger" onClick={() => handleRemove(props.name)}>
-            löschen
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <div
+        id="myModal"
+        className="verineModal"
+        style={{ display: showModal ? "block" : "none" }}
+      >
+        <div className="verineModalContent">
+          <span className="verineModalClose" onClick={handleClose}>
+            &times;
+          </span>
+          <h3>Datenbank löschen</h3>
+          <p> Wollen Sie wirklich die Datenbank: {props.name} löschen?</p>
+          <div className="text--right">
+            <button
+              className="button button--outline button--secondary"
+              onClick={handleClose}
+            >
+              abbrechen
+            </button>
+            <button
+              className="button button--outline button--danger margin-left--xs"
+              onClick={() => handleRemove(props.name)}
+            >
+              löschen
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

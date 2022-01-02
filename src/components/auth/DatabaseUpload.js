@@ -42,25 +42,25 @@ export default function DatabaseUpload(props) {
   }
 
   return (
-    <div className="row">
-      <h3>Datenbank (.db) hochladen</h3>
-      <div className="col-md-6 mt-1">
-        <input
-          className="form-control"
-          type="file"
-          id="formFile"
-          onChange={handleFileChange}
-        />
-        <div className="mt-1">{alert}</div>
+    <div className="container">
+      <div className="row">
+        <h3>Datenbank (.db) hochladen</h3>
       </div>
-      <div className="col-md-6 mt-1">
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={handleFileUpload}
-        >
-          Upload
-        </button>
+      <div className="row">
+        <div className="col">
+          <input
+            className="verineFormUpload"
+            type="file"
+            id="formFile"
+            onChange={handleFileChange}
+          />
+          <div className="">{alert}</div>
+        </div>
+        <div className="col">
+          <button className="button button--outline button--primary" onClick={handleFileUpload}>
+            Upload
+          </button>
+        </div>
       </div>
     </div>
   );
