@@ -13,5 +13,5 @@ export default function Logout() {
     });
   }
 
-  return <button class="button button--danger mt-3 mb-1" onClick={() => handleLogout()}>Logout</button>;
+  return <button className="button button--danger mt-3 mb-1" onClick={() => handleLogout()}>Logout</button>;
 }
