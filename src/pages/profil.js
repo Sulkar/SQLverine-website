@@ -12,7 +12,7 @@ export default function profil() {
       <main>
         {myValues.loggedin ? (
           <div className="container">
-            <div className="row mt-5">
+            <div className="row margin-top--sm">
               <div className="col">
                 <h2>Hallo {myValues.username}</h2>
                 <ul>
@@ -27,7 +27,7 @@ export default function profil() {
               </div>
             </div>
             <div className="row mt-3">
-              <div className="col text-center">
+              <div className="col text--center">
                 <Logout />
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function profil() {
           <div className="container">
             <div className="row mt-5">
               <div className="col col--4"></div>
-              <div className="col col--4 text-center">
+              <div className="col col--4 text--center">
                 <div>{myValues.loggedin ? <></> : <Login />}</div>
               </div>
               <div className="col col--4"></div>

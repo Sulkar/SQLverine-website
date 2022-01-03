@@ -12,7 +12,7 @@ export default function HandleDatabases() {
   const urlFileUpload = "https://test.sqlverine.org/php/get_files.php";
 
   async function getDatabases() {
-    setMyValues(oldValues => ({...oldValues, loader:true }));
+    setMyValues((oldValues) => ({ ...oldValues, loader: true }));
     if (myValues.loggedin) {
       axios
         .post(urlFileUpload, {
@@ -21,7 +21,7 @@ export default function HandleDatabases() {
         .then(function (response) {
           setDatabases(Object.values(response.data.files));
           setDatabasesCodes(response.data.codes);
-          setMyValues(oldValues => ({...oldValues, loader:false }));
+          setMyValues((oldValues) => ({ ...oldValues, loader: false }));
         })
         .catch(function (error) {
           console.log(error);
@@ -39,7 +39,7 @@ export default function HandleDatabases() {
         <div>
           <DatabaseUpload getDatabases={getDatabases} />
 
-          <div className="mt-3">
+          <div className="margin-top--sm">
             <h3>Datenbanken</h3>
             {myValues.loader ? <Loader /> : <></>}
             <ul className="verineList">

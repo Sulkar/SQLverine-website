@@ -1,8 +1,5 @@
 import React from "react";
 
 export default function Loader() {
-  return (
-    <div className="verineLoader">     
-    </div>
-  );
+  return <div className="verineLoader"></div>;
 }

@@ -41,17 +41,18 @@ export default function Login() {
 
   return (
     <div>
-      <div className="row">
+      <div className="row margin-top--sm">
         <div className="col text--center">
-         <h2>Anmelden</h2>
+          <h2>Anmelden</h2>
         </div>
       </div>
       <div className="row">
         <div className="col">
-          <p>Benutzername:</p>
+          <label for="fname">Benutzername:</label>
         </div>
         <div className="col">
           <input
+            id="fname"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -60,10 +61,11 @@ export default function Login() {
       </div>
       <div className="row">
         <div className="col">
-          <p> Passwort:</p>
+          <label for="fpass"> Passwort:</label>
         </div>
         <div className="col">
           <input
+            id="fpass"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -73,7 +75,10 @@ export default function Login() {
       <div>{alert}</div>
       <div className="row">
         <div className="col text--center">
-          <button className="button button--outline button--success" onClick={handleLogin}>
+          <button
+            className="button button--outline button--primary margin-vert--xs"
+            onClick={handleLogin}
+          >
             Login
           </button>
         </div>

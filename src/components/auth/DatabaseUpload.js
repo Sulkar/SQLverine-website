@@ -57,7 +57,7 @@ export default function DatabaseUpload(props) {
           <div className="">{alert}</div>
         </div>
         <div className="col">
-          <button className="button button--outline button--primary" onClick={handleFileUpload}>
+          <button className="button button--outline button--primary margin-top--xs" onClick={handleFileUpload}>
             Upload
           </button>
         </div>

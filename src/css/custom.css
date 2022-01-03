@@ -6,178 +6,183 @@
 
 /* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #25c2a0;
-    --ifm-color-primary-dark: rgb(33, 175, 144);
-    --ifm-color-primary-darker: rgb(31, 165, 136);
-    --ifm-color-primary-darkest: rgb(26, 136, 112);
-    --ifm-color-primary-light: rgb(70, 203, 174);
-    --ifm-color-primary-lighter: rgb(102, 212, 189);
-    --ifm-color-primary-lightest: rgb(146, 224, 208);
-    --ifm-code-font-size: 95%;
+  --ifm-color-primary: #5f9ea0;
+  --ifm-color-primary-dark: #568e90;
+  --ifm-color-primary-darker: #518688;
+  --ifm-color-primary-darkest: #436f70;
+  --ifm-color-primary-light: #6fa8aa;
+  --ifm-color-primary-lighter: #77adae;
+  --ifm-color-primary-lightest: #8fbbbd;
+  --ifm-code-font-size: 95%;
+  --ifm-footer-background-color: slategrey;
+  --ifm-footer-background-color-dark: slategrey;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.footer--dark {
+  background-color: slategrey;
+}
+
+.customImageBorder {
+  border: 1px solid #dadde1;/*#5f9ea0;*/
+  border-radius: 2px;
+}
+
+.navbar__title{
+  overflow: visible;
+}
+
+/* CodeSearch.js */
+.inputWithButton {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+.inputWithButton input {
+  width: 70%;
+  height: 25px;
+  padding-right: 60px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 2rem;
+  font-size: 18px;
+}
+.inputWithButton span {
+  position: absolute;
+  color: black;
+  right: 40px;
+  top: 2px;
+  cursor: pointer;
+}
+
+/* verine form upload file */
+.verineFormUpload {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* verine Loader */
+.verineLoader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #5f9ea0;
+  border-right: 10px solid #5f9ea0;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
-  
-  .docusaurus-highlight-code-line {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
+  100% {
+    -webkit-transform: rotate(360deg);
   }
-  
-  html[data-theme="dark"] .docusaurus-highlight-code-line {
-    background-color: rgba(0, 0, 0, 0.3);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /* CodeSearch.js */
-  .inputWithButton {
-    position: relative;
-    height: 100px;
-    width: 200px;
+  100% {
+    transform: rotate(360deg);
   }
-  .inputWithButton input {
-    width: 70%;
-    height: 25px;
-    padding-right: 60px;
-    padding-left: 10px;
-    border: none;
-    border-radius: 2rem;
-    font-size: 18px;
-  }
-  .inputWithButton span {
-    position: absolute;
-    color: black;
-    right: 40px;
-    top: 2px;
-    cursor: pointer;
-  }
-  
-  /* Loader Component */
-  #myLoader {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-  }
-  
-  /* verine form upload file */
-  .verineFormUpload {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  /* verine Loader */
-  .verineLoader {
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #5f9ea0;
-    border-right: 10px solid #5f9ea0;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: spin 1.5s linear infinite; /* Safari */
-    animation: spin 1.5s linear infinite;
-  }
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* verine Select */
-  .verineSelect {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-    -moz-padding-start: calc(0.75rem - 3px);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
-  
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-  
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  
-  /* Verine DB List */
-  .verineList {
-    display: flex;
-    flex-direction: column;
-  }
-  .verineListItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    padding: 0.5rem 1rem;
-  }
-  /* Verine Modal */
-  .verineModal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  }
+}
+
+/* verine Select */
+.verineSelect {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Verine DB List */
+.verineList {
+  display: flex;
+  flex-direction: column;
+}
+.verineListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.5rem 1rem;
+}
+/* Verine Modal */
+.verineModal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.verineModalContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px; /* Could be more or less, depending on screen size */
+}
+.verineModalClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: -5px;
+}
+.verineModalClose:hover,
+.verineModalClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 996px) {
   .verineModalContent {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    max-width: 500px; /* Could be more or less, depending on screen size */
+    margin: 20% auto; /* 15% from the top and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
   }
-  .verineModalClose {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: -20px;
-    margin-right: -5px;
-  }
-  .verineModalClose:hover,
-  .verineModalClose:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  @media (max-width: 996px) {
-    .verineModalContent {
-      margin: 20% auto; /* 15% from the top and centered */
-      width: 80%; /* Could be more or less, depending on screen size */
-    }
-  }
-  
+}
