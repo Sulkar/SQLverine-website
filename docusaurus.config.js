@@ -33,10 +33,9 @@ module.exports = {
                 { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
                 { to: 'https://author.sqlverine.org/', label: 'Autorenwerkzeug', position: 'left' },
                 { to: '/docs/intro', label: 'Dokumentation', position: 'left' },
-                { to: '/idee', label: 'Idee', position: 'right' },
-                { to: '/ueberuns', label: 'Über uns', position: 'right' },
+                { to: '/info', label: 'Info', position: 'right' },
                 { to: '/blog', label: 'Blog', position: 'right' },
-
+                { to: '/service', label: 'Service', position: 'right' },
                 /*{
                     type: 'localeDropdown',
                     position: 'right',
@@ -68,8 +67,8 @@ module.exports = {
                             href: 'https://twitter.com/sqlverine',
                         },
                         {
-                            label: 'Blog',
-                            to: '/blog',
+                            label: 'YouTube',
+                            to: 'https://www.youtube.com/channel/UCfF5agqoTyG87g6GI9j53tw',
                         },
                         {
                             label: 'Github',

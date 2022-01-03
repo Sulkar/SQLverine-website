@@ -12,6 +12,7 @@ export default function Login() {
 
   // Login
   async function handleLogin(event) {
+    event.preventDefault();
     axios
       .post(urlLogin, {
         name: name,
@@ -40,15 +41,62 @@ export default function Login() {
   }
 
   return (
+    <>
+      <div className="row margin-top--sm">
+        <div className="col text--center">
+          <h2>Anmelden</h2>
+        </div>
+      </div>
+      <form className="verineLogin" onSubmit={handleLogin}>
+        <div className="container">
+          <label htmlFor="fname">
+            <b>Benutzername</b>
+          </label>
+          <input
+            type="text"
+            placeholder=""
+            name="fname"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+
+          <label htmlFor="fpass">
+            <b>Passwort</b>
+          </label>
+          <input
+            type="password"
+            placeholder=""
+            name="fpass"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <div className="text--center">
+            <button
+              className="button button--outline button--primary margin-vert--xs"
+              onClick={handleLogin}
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </>
+  );
+
+  /*return (
     <div>
       <div className="row margin-top--sm">
         <div className="col text--center">
           <h2>Anmelden</h2>
         </div>
       </div>
+      <form onSubmit={handleLogin}>
       <div className="row">
         <div className="col">
-          <label for="fname">Benutzername:</label>
+          <label htmlFor="fname">Benutzername:</label>
         </div>
         <div className="col">
           <input
@@ -61,7 +109,7 @@ export default function Login() {
       </div>
       <div className="row">
         <div className="col">
-          <label for="fpass"> Passwort:</label>
+          <label htmlFor="fpass"> Passwort:</label>
         </div>
         <div className="col">
           <input
@@ -72,6 +120,7 @@ export default function Login() {
           />
         </div>
       </div>
+      </form>
       <div>{alert}</div>
       <div className="row">
         <div className="col text--center">
@@ -84,5 +133,5 @@ export default function Login() {
         </div>
       </div>
     </div>
-  );
+  );*/
 }

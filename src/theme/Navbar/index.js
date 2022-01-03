@@ -25,6 +25,7 @@ import Logo from '@theme/Logo';
 import IconMenu from '@theme/IconMenu';
 import IconClose from '@theme/IconClose';
 import styles from './styles.module.css'; // retrocompatible with v1
+import CodeSearch from '@site/src/components/CodeSearch'
 
 
 //custom SQLverine
@@ -261,6 +262,8 @@ function Navbar() {
             <NavbarItem {...item} key={i} />
           ))}
         </div>
+
+
         <div className="navbar__items navbar__items--right">
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
@@ -270,6 +273,9 @@ function Navbar() {
           <NavbarItem {...itemProfil} key={itemProfil.label} /> 
           : <NavbarItem {...itemLogin} key={itemLogin.label} />}
           
+         
+         <CodeSearch />
+
           {!colorModeToggle.disabled && (
             <Toggle
               className={styles.toggle}

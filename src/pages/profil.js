@@ -36,7 +36,7 @@ export default function profil() {
           <div className="container">
             <div className="row mt-5">
               <div className="col col--4"></div>
-              <div className="col col--4 text--center">
+              <div className="col col--4">
                 <div>{myValues.loggedin ? <></> : <Login />}</div>
               </div>
               <div className="col col--4"></div>

@@ -39,27 +39,10 @@
 }
 
 /* CodeSearch.js */
-.inputWithButton {
-  position: relative;
-  height: 100px;
-  width: 200px;
+.verineCodeSearch {
+  width: 6.5rem;  
 }
-.inputWithButton input {
-  width: 70%;
-  height: 25px;
-  padding-right: 60px;
-  padding-left: 10px;
-  border: none;
-  border-radius: 2rem;
-  font-size: 18px;
-}
-.inputWithButton span {
-  position: absolute;
-  color: black;
-  right: 40px;
-  top: 2px;
-  cursor: pointer;
-}
+
 
 /* verine form upload file */
 .verineFormUpload {
@@ -185,4 +168,29 @@
     margin: 20% auto; /* 15% from the top and centered */
     width: 80%; /* Could be more or less, depending on screen size */
   }
+}
+
+
+/* verine Details */
+.verineDetails{
+  background-color: #E6F6E6;
+  border-color: #009400!important;
+}
+.verineDetails summary::before{
+  border-color: transparent transparent transparent #009400!important;
+}
+
+/* verine Login */
+.verineLogin{
+  border: 3px solid #f1f1f1;
+}
+
+.verineLogin input[type=text], 
+.verineLogin input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
