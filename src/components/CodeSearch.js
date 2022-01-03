@@ -15,6 +15,7 @@ export default function CodeSearch() {
       })
       .then(function (response) {
         if (response.data != 0) {
+          setCode("");
           window.location.href = response.data;
         } else {
           setAlert(
@@ -33,6 +34,8 @@ export default function CodeSearch() {
         <input
           className="navbar__search-input verineCodeSearch"
           placeholder="DB Code"
+          value={code}
+          onChange={(e) => setCode(e.target.value)}
         />
       </div>
     </form>
