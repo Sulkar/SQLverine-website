@@ -55,7 +55,6 @@
   display: inline-block;
   font-size: 0.9rem;
   height: 2rem;
-  padding-top: 0px;
   padding-right: 0.5rem;
   padding-bottom: 0px;
   padding-left: 0.8rem;
@@ -145,6 +144,7 @@
 .verineList {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
 }
 .verineListItem {
   display: flex;

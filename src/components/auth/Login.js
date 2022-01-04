@@ -83,6 +83,7 @@ export default function Login() {
           </div>
         </div>
       </form>
+      <div className="margin-top--xs">{alert}</div>
     </>
   );
 }
