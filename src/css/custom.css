@@ -30,19 +30,42 @@
 }
 
 .customImageBorder {
-  border: 1px solid #dadde1;/*#5f9ea0;*/
+  border: 1px solid #dadde1; /*#5f9ea0;*/
   border-radius: 2px;
 }
 
-.navbar__title{
+.navbar__title {
   overflow: visible;
 }
 
 /* CodeSearch.js */
-.verineCodeSearch {
-  width: 6.5rem;  
+.verineCodeSearchWrapper {
+  background: var(--ifm-navbar-search-input-background-color);
+  border-radius: 2rem;
 }
-
+.verineCodeSearch {
+  -webkit-appearance: none;
+  appearance: none;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: none;
+  background-color: transparent;
+  color: var(--ifm-navbar-search-input-color);
+  cursor: text;
+  display: inline-block;
+  font-size: 0.9rem;
+  height: 2rem;
+  padding-top: 0px;
+  padding-right: 0.5rem;
+  padding-bottom: 0px;
+  padding-left: 0.8rem;
+  width: 4.5rem;
+}
+.verineCodeSearchBtn {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  right: 0;
+  cursor: pointer;
+}
 
 /* verine form upload file */
 .verineFormUpload {
@@ -170,23 +193,22 @@
   }
 }
 
-
 /* verine Details */
-.verineDetails{
-  background-color: #E6F6E6;
-  border-color: #009400!important;
+.verineDetails {
+  background-color: #e6f6e6;
+  border-color: #009400 !important;
 }
-.verineDetails summary::before{
-  border-color: transparent transparent transparent #009400!important;
+.verineDetails summary::before {
+  border-color: transparent transparent transparent #009400 !important;
 }
 
 /* verine Login */
-.verineLogin{
+.verineLogin {
   border: 3px solid #f1f1f1;
 }
 
-.verineLogin input[type=text], 
-.verineLogin input[type=password] {
+.verineLogin input[type="text"],
+.verineLogin input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

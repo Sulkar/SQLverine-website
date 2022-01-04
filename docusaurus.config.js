@@ -36,6 +36,7 @@ module.exports = {
                 { to: '/info', label: 'Info', position: 'right' },
                 { to: '/blog', label: 'Blog', position: 'right' },
                 { to: '/service', label: 'Service', position: 'right' },
+
                 /*{
                     type: 'localeDropdown',
                     position: 'right',
