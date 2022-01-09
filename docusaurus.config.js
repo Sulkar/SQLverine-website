@@ -48,21 +48,15 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Dokumentation',
+                    title: 'SQLverine',
                     items: [{
-                        label: 'SQLverine Editor',
-                        to: '/docs/Editor/intro',
-                    },  {
-                        label: 'SQLverine Autorenwerkezeug',
-                        to: '/docs/Autorenwerkzeug/intro',
-                    }, {
-                        label: 'SQLite Dokumentation',
-                        to: '/docs/SQLite Befehle/intro',
+                        label: 'Datenbanken',
+                        to: '/databases',
                     },
                     ],
                 },
                 {
-                    title: 'Weiteres',
+                    title: 'Community',
                     items: [{
                             label: 'Twitter',
                             href: 'https://twitter.com/sqlverine',
