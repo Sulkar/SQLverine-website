@@ -5,7 +5,7 @@ import Alert from "../Alert";
 
 export default function Login() {
   const [myValues, setMyValues] = useContext(MyContext);
-  const urlLogin = "https://test.sqlverine.org/php/login.php";
+  const urlLogin = "https://sqlverine.org/php/login.php";
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [alert, setAlert] = useState("");

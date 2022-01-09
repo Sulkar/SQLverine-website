@@ -30,8 +30,8 @@ module.exports = {
                 src: 'img/SQLverine.svg',
             },
             items: [
-                { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left' },
-                { to: 'https://author.sqlverine.org/', label: 'Autorenwerkzeug', position: 'left' },
+                { to: 'https://editor.sqlverine.org/', label: 'Editor', position: 'left', target: '_self' },
+                { to: 'https://author.sqlverine.org/', label: 'Autorenwerkzeug', position: 'left', target: '_self' },
                 { to: '/docs/intro', label: 'Dokumentation', position: 'left' },
                 { to: '/info', label: 'Info', position: 'right' },
                 { to: '/blog', label: 'Blog', position: 'right' },
@@ -104,12 +104,10 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+                    // Please change this to your repo.                    
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

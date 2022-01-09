@@ -4,7 +4,7 @@ import { MyContext } from "../MyContext";
 
 export default function Session() {
   const [myValues, setMyValues] = useContext(MyContext);
-  const urlSession = "https://test.sqlverine.org/php/session.php";
+  const urlSession = "https://sqlverine.org/php/session.php";
 
   React.useEffect(() => {
     axios.get(urlSession).then((response) => {

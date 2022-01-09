@@ -6,7 +6,7 @@ import Alert from "../Alert";
 export default function DatabaseUpload(props) {
   const [myValues, setMyValues] = useContext(MyContext);
   const [selectedFile, setSelectedFile] = useState(null);
-  const urlFileUpload = "https://test.sqlverine.org/php/upload_file.php";
+  const urlFileUpload = "https://sqlverine.org/php/upload_file.php";
   const [alert, setAlert] = useState("");
 
   function handleFileChange(event) {

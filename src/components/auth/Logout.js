@@ -3,7 +3,7 @@ import axios from "axios";
 import { MyContext } from "../MyContext";
 
 export default function Logout() {
-  const urlLogout = "https://test.sqlverine.org/php/logout.php";
+  const urlLogout = "https://sqlverine.org/php/logout.php";
   const [myValues, setMyValues] = useContext(MyContext);
 
   // Logout

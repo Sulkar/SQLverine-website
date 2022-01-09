@@ -4,7 +4,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export default function CodeSearch() {
   const [code, setCode] = useState("");
-  const urlCode = "https://test.sqlverine.org/php/code.php";
+  const urlCode = "https://sqlverine.org/php/code.php";
   const dbListingPage = useBaseUrl("/databases");
 
   function handleCodeSubmit(event) {

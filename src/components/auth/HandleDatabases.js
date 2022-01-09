@@ -9,7 +9,7 @@ export default function HandleDatabases() {
   const [myValues, setMyValues] = useContext(MyContext);
   const [databases, setDatabases] = useState([]);
   const [databasesCodes, setDatabasesCodes] = useState({});
-  const urlFileUpload = "https://test.sqlverine.org/php/get_files.php";
+  const urlFileUpload = "https://sqlverine.org/php/get_files.php";
 
   async function getDatabases() {
     setMyValues((oldValues) => ({ ...oldValues, loader: true }));

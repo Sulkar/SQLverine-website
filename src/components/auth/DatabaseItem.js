@@ -4,8 +4,8 @@ import { MyContext } from "../MyContext";
 
 export default function DatabaseItem(props) {
   const [myValues, setMyValues] = useContext(MyContext);
-  const urlFileDelete = "https://test.sqlverine.org/php/delete_file.php";
-  const urlCreateUpdateCode = "https://test.sqlverine.org/php/create_code.php";
+  const urlFileDelete = "https://sqlverine.org/php/delete_file.php";
+  const urlCreateUpdateCode = "https://sqlverine.org/php/create_code.php";
 
   async function handleRemove(name) {
     setMyValues((oldValues) => ({ ...oldValues, loader: true }));

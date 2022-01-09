@@ -9,7 +9,7 @@ export default function ListDatabases() {
   const [myValues, setMyValues] = useContext(MyContext);
   const [databases, setDatabases] = useState([]);
   const [databasesCodes, setDatabasesCodes] = useState({});
-  const urlDatabaseList = "https://test.sqlverine.org/php/list_databases.php";
+  const urlDatabaseList = "https://sqlverine.org/php/list_databases.php";
 
   async function getDatabases() {
     setMyValues((oldValues) => ({ ...oldValues, loader: true }));
