@@ -8,6 +8,8 @@
 
 ## Infos
 - Navbar swizzled `npm run swizzle @docusaurus/theme-classic Navbar -- --danger` for Login/Profil navbar item see [commit](https://github.com/Sulkar/SQLverine-website/commit/894e2d93dd47631dae3defae483cc7bb7f62520c).
+- Im Ordner PHP liegen die für die Datenbankanbindung notwenigen PHP Skripte. Die Datei `config.php` muss an die eigene Datenbank angepasst werden.
+
 
 ## Installation
 - benötigt Node.js
