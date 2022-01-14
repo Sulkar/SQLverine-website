@@ -34,6 +34,23 @@ import { MyContext } from '../../components/MyContext';
 const itemLogin = { to: '/profil', label: 'Login', position: 'right' };
 const itemProfil = { to: '/profil', label: 'Profil', position: 'right' };
 
+const itemLoggedIn ={
+  type: 'dropdown',
+  label: 'Account',
+  position: 'right',
+  items: [
+    {
+      to: '/profil', label: 'Profil',
+    },
+    {
+      to: '/password-reset', label: 'Passwort ändern',
+    },
+    {
+      to: '/logout', label: 'Abmelden',
+    },
+  ],
+}
+
 const DefaultNavItemPosition = 'right';
 
 function useNavbarItems() {
@@ -193,7 +210,7 @@ function NavbarMobileSidebar({sidebarShown, toggleSidebar}) {
               <NavbarItem mobile {...item} onClick={toggleSidebar} key={i} />
             ))}
             {myValues.loggedin ?          
-            <NavbarItem mobile {...itemProfil} onClick={toggleSidebar} key={itemProfil.label} />
+            <NavbarItem mobile {...itemLoggedIn} onClick={toggleSidebar} key={itemLoggedIn.label} />
             : <NavbarItem mobile {...itemLogin} onClick={toggleSidebar} key={itemLogin.label} />}
           </ul>
         </div>
@@ -270,7 +287,7 @@ function Navbar() {
 
           ))}
           {myValues.loggedin ?
-          <NavbarItem {...itemProfil} key={itemProfil.label} /> 
+          <NavbarItem {...itemLoggedIn} key={itemLoggedIn.label} /> 
           : <NavbarItem {...itemLogin} key={itemLogin.label} />}
           
          

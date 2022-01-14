@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import Layout from "@theme/Layout";
 import { MyContext } from "../components/MyContext";
 import Login from "../components/auth/Login";
-import Logout from "../components/auth/Logout";
 import HandleDatabases from "../components/auth/HandleDatabases";
 
 export default function profil() {
@@ -24,11 +23,6 @@ export default function profil() {
             <div className="row">
               <div className="col">
                 <HandleDatabases />
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col text--center">
-                <Logout />
               </div>
             </div>
           </div>

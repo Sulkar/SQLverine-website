@@ -30,13 +30,13 @@ export default function Login() {
           }));
         } else {
           setAlert(
-            <Alert alert="Benutzername oder Password sind nicht korrekt!" />
+            <Alert type="" info="Benutzername oder Password sind nicht korrekt!" />
           );
         }
       })
       .catch(function (error) {
         console.log(error);
-        setAlert(<Alert alert={error.toString()} />);
+        setAlert(<Alert type="" info={error.toString()} />);
       });
   }
 

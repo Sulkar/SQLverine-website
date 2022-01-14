@@ -28,11 +28,11 @@ export default function DatabaseUpload(props) {
           setAlert("");
         } else if (response.data == 2) {
           setAlert(
-            <Alert alert="Sie können keine weitere Datenbank hochladen. Löschen Sie eine vorhandene, um eine neue Datenbank hochzuladen. " />
+            <Alert type="" info="Sie können keine weitere Datenbank hochladen. Löschen Sie eine vorhandene, um eine neue Datenbank hochzuladen. " />
           );
         } else {
           setAlert(
-            <Alert alert="Die Datei konnte nicht hochgeladen werden!" />
+            <Alert type="" info="Die Datei konnte nicht hochgeladen werden!" />
           );
         }
       })
