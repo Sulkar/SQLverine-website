@@ -19,6 +19,7 @@ export default function DatabaseUpload(props) {
     const formData = new FormData();
     formData.append("myFile", selectedFile, selectedFile.name);
     formData.append("database_folder", myValues.database_folder);
+    formData.append("max_file_size", myValues.max_file_size);
 
     axios
       .post(urlFileUpload, formData)
@@ -28,8 +29,17 @@ export default function DatabaseUpload(props) {
           setAlert("");
         } else if (response.data == 2) {
           setAlert(
-            <Alert type="" info="Sie können keine weitere Datenbank hochladen. Löschen Sie eine vorhandene, um eine neue Datenbank hochzuladen. " />
+            <Alert
+              type=""
+              info="Sie können keine weitere Datenbank hochladen. Löschen Sie eine vorhandene, um eine neue Datenbank hochzuladen. "
+            />
           );
+        } else if (response.data == 3) {
+          let maxFileSizeInfo =
+            "Sie können nur Datenbanken bis zu einer Größe von " +
+            myValues.max_file_size +
+            " Bytes hochladen.";
+          setAlert(<Alert type="" info={maxFileSizeInfo} />);
         } else {
           setAlert(
             <Alert type="" info="Die Datei konnte nicht hochgeladen werden!" />
@@ -57,7 +67,10 @@ export default function DatabaseUpload(props) {
           <div className="">{alert}</div>
         </div>
         <div className="col">
-          <button className="button button--outline button--primary margin-top--xs" onClick={handleFileUpload}>
+          <button
+            className="button button--outline button--primary margin-top--xs"
+            onClick={handleFileUpload}
+          >
             Upload
           </button>
         </div>

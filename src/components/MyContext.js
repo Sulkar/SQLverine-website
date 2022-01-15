@@ -7,6 +7,7 @@ function MyContextProvider(props) {
     counter: 0,
     username: "",
     database_folder: "",
+    max_file_size: 5000000,
     db_count: 0,
     codes: [],
     loggedin: false,

@@ -10,6 +10,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1) {
 	$uploadOk = 1;
 
 	$database_folder = $_POST["database_folder"];
+	$max_file_size = $_POST["max_file_size"];
 	if($database_folder == ""){
 		$uploadOk = 0;
 	}
@@ -25,8 +26,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1) {
 	}
 	
 	// Check file size
-	if ($_FILES["myFile"]["size"] > 500000) {
-	  $uploadOk = 0;
+	if ($_FILES["myFile"]["size"] > $max_file_size) {
+	  $uploadOk = 3;
 	}
 
 	// Allow certain file formats

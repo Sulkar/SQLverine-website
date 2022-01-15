@@ -27,6 +27,7 @@ export default function Login() {
             db_count: response.data.db_count,
             codes: response.data.codes.split(","),
             database_folder: response.data.id,
+            max_file_size: response.data.max_file_size
           }));
         } else {
           setAlert(

@@ -15,8 +15,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1) {
 	$user_id = $_SESSION['id'];
 	
 	/*$db_name = "tester.db";
-	$database_folder = 2;
-	$user_id = 2;*/
+	$database_folder = 1;
+	$user_id = 1;*/
 	
 	
 	function deleteCode(){

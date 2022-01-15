@@ -38,6 +38,7 @@ if($stmt = $pdo->prepare($sql)){
 							$results['username'] = $row['username'];
 							$results['codes'] = $row["codes"];	
 							$results['db_count'] = $row["db_count"];							
+							$results['max_file_size'] = $row["max_file_size"];
    
                             $_SESSION["loggedin"] = $results['loggedin'];
 							$_SESSION["username"] = $results['username'];
