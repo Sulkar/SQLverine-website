@@ -56,6 +56,7 @@ export default function ListDatabases() {
                   >
                     {database["db_name"]}
                   </a>
+                  <div>{database["info"]}</div>
                   <div style={{fontSize: '0.875em'}}>von {database["username"]}</div>
                 </div>
 
