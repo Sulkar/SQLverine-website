@@ -12,7 +12,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 $username = $data["name"];
 $password = $data["password"];
 
-$sql = "SELECT id, username, password, codes, db_count FROM users WHERE username = :username";
+$sql = "SELECT * FROM users WHERE username = :username";
 
 $results = array();
 $results['loggedin'] = 0;
@@ -45,6 +45,7 @@ if($stmt = $pdo->prepare($sql)){
 							$_SESSION['codes'] = $results['codes'];
 							$_SESSION['id'] = $results['id'];
 							$_SESSION['db_count'] = $results['db_count'];
+							$_SESSION['max_file_size'] = $results["max_file_size"];
                                                               
                         } else{
                             // Password is not valid, display a generic error message

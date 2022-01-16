@@ -12,6 +12,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === 1){
 	$results['id'] = $_SESSION['id'];
 	$results['db_count'] = $_SESSION['db_count'];
 	$results['codes'] = $_SESSION['codes'];
+	$results['max_file_size'] = $_SESSION['max_file_size'];
 	echo json_encode($results);
 }else{
 	echo json_encode($results);

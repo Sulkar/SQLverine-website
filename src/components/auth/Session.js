@@ -14,6 +14,7 @@ export default function Session() {
           loggedin: true,
           username: response.data.username,
           db_count: response.data.db_count,
+          max_file_size: response.data.max_file_size,
           codes: response.data.codes.split(","),
           database_folder: response.data.id,
         }));

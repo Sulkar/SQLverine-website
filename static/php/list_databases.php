@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: *");
 require_once "config.php";
 
 try{
-	$sql = "SELECT codes.code, codes.title, codes.info, codes.url, codes.db_name, codes.user_id, users.username FROM codes JOIN users ON users.id = codes.user_id";
+	$sql = "SELECT codes.code, codes.title, codes.info, codes.url, codes.db_name, codes.user_id, users.username FROM codes JOIN users ON users.id = codes.user_id ORDER BY codes.db_name ASC";
 	
 	$stmt = $pdo->prepare($sql); 
 	

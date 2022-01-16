@@ -16,7 +16,8 @@ export default function profil() {
                 <h2>Hallo {myValues.username}</h2>
                 <ul>
                   <li>Maximale Anzahl von Datenbanken: {myValues.db_count}</li>
-                  <li>Mögliche Codes: {myValues.codes.toString()}</li>
+                  <li>Maximale Upload Größe pro Datenbank: {(myValues.max_file_size/1000).toString() + " KB"}</li>
+                  <li>Mögliche Codes: {myValues.codes.toString()}</li>                  
                 </ul>
               </div>
             </div>
