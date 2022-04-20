@@ -34,7 +34,11 @@ export default function EditorLink({ link, sqlQuery, runBtn }) {
 
   return (
     <>
-      <div ref={myContainer} className="codeArea"></div>
+      <div className="codeArea">
+        <pre>
+          <code ref={myContainer}></code>
+        </pre>
+      </div>
       {runBtn === "show" ? (
         <a href={sqlVerineLink} target="_blank" style={{ float: "right" }}>
           <svg
