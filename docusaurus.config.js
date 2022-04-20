@@ -105,11 +105,13 @@ module.exports = {
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
+                    
                 },
             },
         ],
     ],
     plugins: [
         'plugin-image-zoom',
+        path.resolve(__dirname, 'plugins', 'AddWebpackConfig'),
       ],
 };

@@ -6,17 +6,9 @@ title: SELECT
 
 import EditorLink from "@site/src/components/EditorLink"
 
-<img
-  src={require('./assets/select_code.png').default}  
-  style={{maxHeight:50}}
-/>
-
-
 ## Einzelne Spalte ausgeben
 
-```sql
-SELECT spaltenname FROM tabellenname
-```
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT spaltenname FROM tabellenname" runBtn="hide" ></EditorLink>
 
 Mit diesem Befehl werden alle Zeilen der Spalte "spaltenname" aus der Tabelle "tabellenname" ausgegeben.
 
@@ -25,10 +17,7 @@ Mit diesem Befehl werden alle Zeilen der Spalte "spaltenname" aus der Tabelle "t
 #### Befehl:
 
 
-```sql
-SELECT vorname FROM schueler
-```
-<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db&maxElementNr=7&code=%3Cspan%20class%3D%22codeline%22%3E%3Cspan%20class%3D%22codeElement_0%20btnSelect%20synSQL%20sqlSelect%20start%20parent%20sqlIdentifier%20inputFields%20%22%20data-sql-element%3D%22SELECT%22%3ESELECT%3Cspan%20class%3D%22codeElement_1%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_2%20selColumn%20synColumns%20schueler%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_SELECT%22%20data-next-element%3D%226%22%20data-element-group%3D%22undefined%22%3Evorname%3C/span%3E%3Cspan%20class%3D%22codeElement_3%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_4%22%20data-goto-element%3D%220%22%3EFROM%3C/span%3E%3Cspan%20class%3D%22codeElement_5%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_6%20selTable%20synTables%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_FROM%22%20data-next-element%3D%222%22%20data-element-group%3D%22undefined%22%3Eschueler%3C/span%3E%3C/span%3E%3C/span%3E"></EditorLink>
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT * FROM schueler" runBtn="show"></EditorLink>
 
 #### Ergebnis:
 
@@ -46,9 +35,9 @@ SELECT vorname FROM schueler
 
 ## Gezielt mehrere Spalten ausgeben
 
-```sql
-SELECT spaltenname_1, spaltenname_2,...,spaltenname_n FROM tabellenname
-```
+
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT spaltenname_1, spaltenname_2, spaltenname_n FROM tabellenname" runBtn="hide"></EditorLink>
+
 Hiermit können mehrere Spalten einer Tabelle angezeigt werden. Es werden immer alle Zeilen der selektierten Spalten angezeigt.
 
 ### Beispiel
@@ -56,10 +45,7 @@ Hiermit können mehrere Spalten einer Tabelle angezeigt werden. Es werden immer 
 #### Befehl:
 
 
-```sql
-SELECT id, vorname FROM schueler
-```
-<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db&maxElementNr=9&code=%3Cspan%20class%3D%22codeline%22%3E%3Cspan%20class%3D%22codeElement_0%20btnSelect%20synSQL%20sqlSelect%20start%20parent%20sqlIdentifier%20inputFields%20%22%20data-sql-element%3D%22SELECT%22%3ESELECT%3Cspan%20class%3D%22codeElement_1%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_2%20selColumn%20synColumns%20schueler%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_SELECT%22%20data-next-element%3D%226%22%20data-element-group%3D%22undefined%22%3Eid%3C/span%3E%3Cspan%20class%3D%22codeElement_7%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%2C%20%3C/span%3E%3Cspan%20class%3D%22codeElement_8%20selColumn%20synColumns%20schueler%20inputField%20sqlIdentifier%20extended%22%20data-sql-element%3D%22SELECT_SELECT%22%20data-next-element%3D%22undefined%22%20data-element-group%3D%22undefined%22%3Evorname%3C/span%3E%3Cspan%20class%3D%22codeElement_3%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_4%22%20data-goto-element%3D%220%22%3EFROM%3C/span%3E%3Cspan%20class%3D%22codeElement_5%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_6%20selTable%20synTables%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_FROM%22%20data-next-element%3D%222%22%20data-element-group%3D%22undefined%22%3Eschueler%3C/span%3E%3C/span%3E%3C/span%3E" />
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT id, vorname FROM schueler" runBtn="show"></EditorLink>
 
 #### Ergebnis:
 
@@ -78,9 +64,8 @@ SELECT id, vorname FROM schueler
 
 ## Alle Spalten ausgeben
 
-```sql
-SELECT * FROM tabellenname
-```
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT * FROM tabellenname" runBtn="hide"></EditorLink>
+
 Mit diesem Befehl werden alle Zeilen aller Spalten der Tabelle angezeigt.
 
 ### Beispiel
@@ -88,10 +73,7 @@ Mit diesem Befehl werden alle Zeilen aller Spalten der Tabelle angezeigt.
 #### Befehl:
 
 
-```sql
-SELECT * FROM schueler
-```
-<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db&maxElementNr=7&code=%3Cspan%20class%3D%22codeline%22%3E%3Cspan%20class%3D%22codeElement_0%20btnSelect%20synSQL%20sqlSelect%20start%20parent%20sqlIdentifier%20inputFields%20%22%20data-sql-element%3D%22SELECT%22%3ESELECT%3Cspan%20class%3D%22codeElement_1%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_2%20selColumn%20synColumns%20schueler%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_SELECT%22%20data-next-element%3D%226%22%20data-element-group%3D%22undefined%22%3E*%3C/span%3E%3Cspan%20class%3D%22codeElement_3%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_4%22%20data-goto-element%3D%220%22%3EFROM%3C/span%3E%3Cspan%20class%3D%22codeElement_5%20leerzeichen%22%20data-goto-element%3D%22parent%22%3E%26nbsp%3B%3C/span%3E%3Cspan%20class%3D%22codeElement_6%20selTable%20synTables%20inputField%20sqlIdentifier%20root%22%20data-sql-element%3D%22SELECT_FROM%22%20data-next-element%3D%222%22%20data-element-group%3D%22undefined%22%3Eschueler%3C/span%3E%3C/span%3E%3C/span%3E" />
+<EditorLink link="https://editor.sqlverine.org/?db=Grundschule.db" sqlQuery="SELECT * FROM schueler" runBtn="show"></EditorLink>
 
 #### Ergebnis:
 
