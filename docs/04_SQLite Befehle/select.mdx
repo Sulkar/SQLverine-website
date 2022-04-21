@@ -5,6 +5,14 @@ title: SELECT
 ---
 
 import EditorLink from "@site/src/components/EditorLink";
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
+
+
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s spaltenname/c FROM/s tabellenname/t"
+></CustomEditorLink>
 
 ## Einzelne Spalte ausgeben
 
@@ -40,11 +48,11 @@ Mit diesem Befehl werden alle Zeilen der Spalte "spaltenname" aus der Tabelle "t
 
 ## Gezielt mehrere Spalten ausgeben
 
-<EditorLink
-  link="https://editor.sqlverine.org/?db=Grundschule.db"
-  sqlQuery="SELECT spaltenname_1, spaltenname_2, spaltenname_n FROM tabellenname"
-  runBtn="hide"
-></EditorLink>
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s spaltenname_1/c ,/s spaltenname_2/c ,/s .../c ,/s spaltenname_n/c FROM/s tabellenname/t"
+></CustomEditorLink>
 
 Hiermit können mehrere Spalten einer Tabelle angezeigt werden. Es werden immer alle Zeilen der selektierten Spalten angezeigt.
 

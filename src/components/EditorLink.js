@@ -8,6 +8,7 @@ export default function EditorLink({ link, sqlQuery, runBtn }) {
   const [maxElementNr, setMaxElementNr] = useState(0);
   const myContainer = useRef(null);
 
+
   function parseSqlTextQuery(sqlTextQuery) {
     try {
       const outputAST = parse(sqlTextQuery);
