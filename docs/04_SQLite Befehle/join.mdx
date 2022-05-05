@@ -4,23 +4,29 @@ custom_edit_url: null
 title: JOIN
 ---
 import EditorLink from "@site/src/components/EditorLink"
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
 
-<img
-  src={require('./assets/join2.png').default}  
-  style={{maxHeight:100}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s tabelle1.*/c FROM/s tabelle1/t /n JOIN/s tabelle2/t ON/s tabelle2.id/c =/o tabelle2.tabelle1_id/c"
+></CustomEditorLink>
 
 ## Ergebnisse aus mehreren Tabellen
 
-```
-SELECT tabellenname_1.spaltenname_1, tabellenname_2.spaltenname_1 FROM tabellename_1
-JOIN tabellenname_2 ON tabellenname_2.id = tabellenname_1.tabellenname_2_id
-```
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s tabellenname_1.spaltenname_1/c ,/s tabellenname_2.spaltenname_1/c FROM/s tabellenname_1/t /n JOIN/s tabellenname_2/t ON/s tabellenname_2.id/c =/o tabellenname_1.tabellenname_2_id/c"
+></CustomEditorLink>
+
 oder
-```
-SELECT tabellenname_1.*, tabellenname_2.* FROM tabellename_1
-JOIN tabellenname_2 ON tabellenname_2.id = tabellenname_1.tabellenname_2_id
-```
+
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s tabellenname_1.*/c ,/s tabellenname_2.*/c FROM/s tabellenname_1/t /n JOIN/s tabellenname_2/t ON/s tabellenname_2.id/c =/o tabellenname_1.tabellenname_2_id/c"
+></CustomEditorLink>
 
 Mit diesem Befehl werden Informationen aus mehreren Tabellen gleichzeitig abgefragt. Das Ergebnis wird über die jeweiligen IDs verknüpft.
 
@@ -49,11 +55,12 @@ Mit diesem Befehl werden Informationen aus mehreren Tabellen gleichzeitig abgefr
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT schueler.vorname, schueler.nachname, klassen.name FROM schueler JOIN klassen ON klassen.id = schueler.klasse_id"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT schueler.vorname, schueler.nachname, klassen.name FROM schueler
-JOIN klassen ON klasse.id = schueler.klasse_id
-```
 Mit diesem Befehl wird abgefragt, welche Schüler*innen in welcher Klasse ist.
 
 #### Ergebnis:
@@ -102,12 +109,12 @@ Mit diesem Befehl wird abgefragt, welche Schüler*innen in welcher Klasse ist.
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT schueler.vorname, schueler.nachname, lehrer.vorname, lehrer.nachname FROM schueler JOIN klassen ON klassen.id = schueler.klasse_id JOIN lehrer ON lehrer.klasse_id = klassen.id"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT schueler.vorname, schueler.nachname, lehrer.vorname, lehrer.nachname FROM schueler
-JOIN klassen ON klasse.id = schueler.klassen_id
-JOIN lehrer ON lehrer.id = klassen.lehrer_id
-```
 Mit diesem Befehl wird abgefragt, welche Schüler*innen welche Klassenlehrkraft haben. Die drei Tabellen (schueler, klassen, lehrer) werden mittels JOIN miteinander verbunden. Ausgegeben werden aber nur die Spalten (aus Tabelle schueler und Tabelle lehrer), die im SELECT-Befehl eingetragen wurden.
 
 #### Ergebnis:

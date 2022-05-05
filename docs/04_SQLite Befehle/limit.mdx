@@ -4,16 +4,22 @@ custom_edit_url: null
 title: LIMIT
 ---
 import EditorLink from "@site/src/components/EditorLink"
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
 
-<img
-  src={require('./assets/limit2.png').default}  
-  style={{maxHeight:50}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s */c FROM/s tabelle/t LIMIT/s 5/i"
+></CustomEditorLink>
 
 ## Ausgabe einschränken
-```
-SELECT * FROM tabellenname LIMIT <Anzahl>
-```
+
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s */c FROM/s tabellenname/t LIMIT/s <Anzahl>/i"
+></CustomEditorLink>
+
 Mit diesem Befehl wird nur die angegebene Anzahl von Ergebnissen angezeigt.
 
 ### Beispiele:
@@ -21,9 +27,11 @@ Mit diesem Befehl wird nur die angegebene Anzahl von Ergebnissen angezeigt.
 #### Befehl
 
 
-```
-SELECT * FROM schueler LIMIT 2
-```
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT * FROM schueler LIMIT 2"
+  runBtn="show"
+></EditorLink>
 
 #### Ergebnis:
 
@@ -37,24 +45,30 @@ SELECT * FROM schueler LIMIT 2
 ---
 
 
-<img
-  src={require('./assets/limit_offset_2.png').default}  
-  style={{maxHeight:50}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s */c FROM/s tabelle/t LIMIT/s 5/i OFFSET/s 10/i"
+></CustomEditorLink>
 
 ## Eine Anzahl von Ergebnissen überspringen
-```
-SELECT * FROM tabellenname LIMIT <Anzahl> OFFSET <Anzahl>
-```
+
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s */c FROM/s tabellenname/t LIMIT/s <Anzahl>/i OFFSET/s <Anzahl>/i"
+></CustomEditorLink>
+
 Mit diesem Befehl wird die angegebene Anzahl (LIMIT) der Ergebnisse ab dem angegeben Wert (OFFSET) angezeigt.
 ### Beispiele:
 
 #### Befehl
 
-
-```
-SELECT * FROM schueler LIMIT 2 OFFSET 2
-```
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT * FROM schueler LIMIT 2 OFFSET 2"
+  runBtn="show"
+></EditorLink>
 
 #### Ergebnis:
 

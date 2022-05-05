@@ -4,19 +4,28 @@ custom_edit_url: null
 title: UPDATE
 ---
 import EditorLink from "@site/src/components/EditorLink"
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
 
-<img
-  src={require('./assets/update2.png').default}  
-  style={{maxHeight:50}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="UPDATE/s tabelle/t SET/s spalte/c =/s 'neuerWert'/i"
+></CustomEditorLink>
 
 ## einen Wert für alle Datensätze ändern
 
-```
-UPDATE tabellenname SET spaltenname = <neuerWert>
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="UPDATE/s tabellenname/t SET/s spaltenname/c =/s <neuerWert>/i"
+></CustomEditorLink>
 oder
-UPDATE tabellenname SET spaltenname = <neuerWert> WHERE spaltenname <Operator> <Wert>
-```
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="UPDATE/s tabellenname/t SET/s spaltenname/c =/s <neuerWert>/i /n WHERE/s spaltenname/c <Operator>/o <Wert>/i" 
+></CustomEditorLink>
+
 Mit dem UPDATE Befehl können alle oder einzelne Einträge in einer Tabelle verändert werden.
 
 ### Beispiel:
@@ -37,6 +46,7 @@ Mit dem UPDATE Befehl können alle oder einzelne Einträge in einer Tabelle ver�
 ```
 UPDATE schueler SET fehltage = 0
 ```
+
 Mit diesem Befehl werden die Fehltage aller Schüler auf 0 zurückgesetzt. Dies könnte am Ende eines Schuljahres sinnvoll sein.
 
 #### Ergebnis:

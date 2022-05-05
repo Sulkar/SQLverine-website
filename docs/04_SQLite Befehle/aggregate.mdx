@@ -5,11 +5,13 @@ title: AGGREGATE
 ---
 
 import EditorLink from "@site/src/components/EditorLink"
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
 
-<img
-  src={require('./assets/aggregat2.png').default}  
-  style={{maxHeight:50}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s AGGREGATE(/s spalte/c )/s FROM/s tabelle/t"
+></CustomEditorLink>
 
 ## Aggregatsfunktionen - GROUP BY ...
 
@@ -25,10 +27,11 @@ import EditorLink from "@site/src/components/EditorLink"
 
 Aggregatsfunktionen berechnen ein Ergebnis aus einer Vielzahl von Werten. Aggregatsfunktionen werden häufig mit dem Gruppierungsbefehl GROUP BY im SELECT Befehl aufgerufen.
 
-```
-SELECT Aggregatsfunktion(spaltenname) FROM tabellenname
-GROUP BY spaltenname
-```
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s Aggregatsfunktion(/s spaltenname/c )/s FROM/s tabellenname/t /n GROUP/s BY/s spaltenname/c"
+></CustomEditorLink>
 
 ### Beispiele:
 
@@ -44,10 +47,12 @@ GROUP BY spaltenname
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT MAX(geburtsdatum), vorname FROM schueler"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT MAX(geburtsdatum), vorname FROM schueler
-```
 Mit diesem Befehl wird der jüngste Schüler*in gefunden, da nach dem größten Wert gesucht wird.
 
 #### Ergebnis:
@@ -60,10 +65,12 @@ Mit diesem Befehl wird der jüngste Schüler*in gefunden, da nach dem größten 
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT MIN(geburtsdatum), vorname FROM schueler"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT MIN(geburtsdatum), vorname FROM schueler
-```
 Mit diesem Befehl wird der älteste Schüler*in gefunden, da nach dem kleinsten Wert gesucht wird.
 
 #### Ergebnis:
@@ -74,10 +81,12 @@ Mit diesem Befehl wird der älteste Schüler*in gefunden, da nach dem kleinsten 
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT COUNT(id) FROM schueler"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT COUNT(id) FROM schueler
-```
 Mit diesem Befehl werden die Einträge in der Spalte id gezählt und ausgegeben.
 
 #### Ergebnis:
@@ -91,10 +100,12 @@ Mit diesem Befehl werden die Einträge in der Spalte id gezählt und ausgegeben.
 
 #### Befehl
 
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT COUNT(id), klasse_id FROM schueler GROUP BY klasse_id"
+  runBtn="show"
+></EditorLink>
 
-```
-SELECT COUNT(id), klasse_id FROM schueler GROUP BY klasse_id
-```
 Mit diesem Befehl werden die Einträge nach der Spalte klasse_id gruppiert, dann gezählt und ausgegeben.
 
 #### Ergebnis:
@@ -108,22 +119,24 @@ Mit diesem Befehl werden die Einträge nach der Spalte klasse_id gruppiert, dann
 
 ## HAVING - Ergebnisse einer Aggregatsfunktion einschränken
 
-```
-SELECT Aggregatsfunktion(spaltenname) FROM tabellenname 
-GROUP BY spaltenname 
-HAVING Aggregatsfunktion(spaltenname) <Operator> <Wert>
-```
-Der Befehl HAVING ersetzt bei einer Aggregatsfunktion den Befehl WHERE und überprüft, ob eine Bedingung zutrifft.
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s Aggregatsfunktion(/s spaltenname/c )/s FROM/s tabellenname/t /n GROUP/s BY/s spaltenname/c /n HAVING/s Aggregatsfunktion(/s spaltenname/c )/s <Operator>/o <Wert>/i"
+></CustomEditorLink>
 
+Der Befehl HAVING ersetzt bei einer Aggregatsfunktion den Befehl WHERE und überprüft, ob eine Bedingung zutrifft.
 
 #### Befehl
 
+SELECT COUNT(id), klasse_id FROM schueler GROUP BY klasse_id HAVING COUNT(id) > 2
 
-```
-SELECT COUNT(id), klasse_id FROM schueler 
-GROUP BY klasse_id 
-HAVING COUNT(id) > 2
-```
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT COUNT(id), klasse_id FROM schueler GROUP BY klasse_id HAVING COUNT(id) > 2"
+  runBtn="show"
+></EditorLink>
+
 Mit diesem Befehl werden die Einträge nach der Spalte klasse_id gruppiert, die gruppierten Schüler*innen gezählt und das Ergebnis nur ausgegegen, wenn in der Klasse mehr als 2 Schüler*innen sind.
 
 #### Ergebnis:

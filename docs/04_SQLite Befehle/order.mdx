@@ -4,26 +4,33 @@ custom_edit_url: null
 title: ORDER
 ---
 import EditorLink from "@site/src/components/EditorLink"
+import CustomEditorLink from "@site/src/components/CustomEditorLink";
 
-<img
-  src={require('./assets/order_code.png').default}  
-  style={{maxHeight:50}}
-/>
+<CustomEditorLink
+  fontSize="2em"
+  border="0px"
+  sqlQuery="SELECT/s spalte/c FROM/s tabelle/t ORDER/s BY/s spalte/c"
+></CustomEditorLink>
 
 ## Ausgabe sortieren
-```
-SELECT * FROM tabellenname ORDER BY spaltenname ASC
-```
+
+<CustomEditorLink
+  fontSize=""
+  border=""
+  sqlQuery="SELECT/s */c FROM/s tabellenname/t ORDER/s BY/s spaltenname/c ASC/s"
+></CustomEditorLink>
+
 Mit diesem Befehl wird das Ergebnis in aufsteigender (ASC) oder absteigender (DESC) Reihenfolge angezeigt.
 
 ### Beispiele:
 
 #### Befehl
 
-
-```
-SELECT * FROM schueler ORDER BY geburtsdatum ASC
-```
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT * FROM schueler ORDER BY geburtsdatum ASC"
+  runBtn="show"
+></EditorLink>
 
 #### Ergebnis:
 
@@ -37,10 +44,11 @@ SELECT * FROM schueler ORDER BY geburtsdatum ASC
 
 #### Befehl
 
-
-```
-SELECT * FROM schueler ORDER BY geburtsdatum DESC
-```
+<EditorLink
+  link="https://editor.sqlverine.org/?db=Grundschule.db"
+  sqlQuery="SELECT * FROM schueler ORDER BY geburtsdatum DESC"
+  runBtn="show"
+></EditorLink>
 
 #### Ergebnis:
 

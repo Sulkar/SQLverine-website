@@ -28,7 +28,6 @@ export default function CustomEditorLink({ fontSize, border, sqlQuery }) {
       sqlQueryArray.forEach((query, index) => {
         const identifierClass = query.match(/\/(\w)/)[1];
         const command = query.replace(/\/(\w)/, "");
-        console.log(identifierClass);
         let newQueryObject = {
           text: command,
           class: styleClassMap.get(identifierClass),
